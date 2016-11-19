@@ -5,6 +5,8 @@ export const KEY_POLICY_DATA = "policyData";
 
 export const KEY_ESTIMATION = "estimation";
 
+export const KEY_ADDITIONAL_DATA = "additionalData";
+
 /**
  * Simple interface to the Local Storage
  */

@@ -5,6 +5,7 @@ import { PolicyApi } from '../swagger/api/PolicyApi';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
+  providers: [PolicyApi]
 })
 export class AppComponent {
 

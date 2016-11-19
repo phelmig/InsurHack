@@ -26,7 +26,6 @@ const appRoutes: Routes = [
     MaterialModule.forRoot()
   ],
   providers: [
-    PolicyApi,
     {
       provide: Configuration, useValue: new Configuration("d06a9843-ce15-30a4-9af8-30b848015e5e")
     }],

@@ -32,6 +32,7 @@ const appRoutes: Routes = [
   { path: 'personal-details', component: PersonalDetailsPageComponent },
   { path: 'individualize-coverage', component: IndividualizeCoveragePageComponent },
   { path: 'additional-info', component: AdditionalInfoPageComponent },
+  { path: 'complete-checkout', component: CompleteCheckoutPageComponent }
 ];
 
 @NgModule({

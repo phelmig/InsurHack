@@ -4,5 +4,7 @@
     </div>
     <div class="individualize-coverage-bottom-sheet__estimated-premium-value">
         {{estimatedPremium | currency:'EUR':true:'.2-2'}}
+        <img *ngIf="isEstimating" src="/assets/images/spinner.gif" alt="loading"/>
     </div>
+    
 </div>

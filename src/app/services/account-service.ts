@@ -1,3 +1,8 @@
+/*     
+(c) 2016 Alex Klein, Florian Reifschneider, Patrick Helmig
+created for InsurHack 2016 by @ak (team InsuReco)
+*/
+
 import { AccountApi } from '../swagger/api/AccountApi'
 import { Injectable } from '@angular/core';
 import { createAccount } from './payloads/create-account';
@@ -12,6 +17,11 @@ export class AccountService {
       this.accountApi = accountApi;
     }
 
+    /**
+     * Create a new account
+     * @param {string} firstName The first name
+     * @param {string} lastName  The last name
+     */
     createAccount(firstName: string, lastName: string) {
         var parameter = createAccount;
         parameter["AccountHolderContact"]["FirstName"] = firstName;

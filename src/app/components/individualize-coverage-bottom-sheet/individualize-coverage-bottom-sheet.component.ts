@@ -7,8 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class IndividualizeCoverageBottomSheetComponent implements OnInit {
 
-    @Input() estimatedPremium: number;
-
+  @Input() estimatedPremium: number;
+  @Input() isEstimating: boolean;
   constructor() { }
 
   ngOnInit() {

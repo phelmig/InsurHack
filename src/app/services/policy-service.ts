@@ -30,7 +30,7 @@ export class PolicyService {
 
     /**
      * Get the rating for liability insurance
-     * @return {Promise<IGetRatingResponse>} Returns the rating repsonse
+     * @return {Promise<IGetRatingResponse>} The get rating response
      */
     getLiabilityRating(coverageConcept: string): Promise<IGetRatingResponse> {
         var parameter = ratingLiabilityPayload;
@@ -53,9 +53,11 @@ export class PolicyService {
             });
     }
 
-        /**
-     * Get the rating for liability insurance
-     * @return {Promise<IGetRatingResponse>} Returns the rating repsonse
+    /**
+     * Get legal protection rating
+     * @param  {string}                      excessPerCaseTerm The xcess per case term
+     * @param  {string}                      workSyncTerm      The work insurance
+     * @return {Promise<IGetRatingResponse>}                   The get rating response
      */
     getLegalProtectionRating(excessPerCaseTerm: string, workSyncTerm: string): Promise<IGetRatingResponse> {
         var parameter = ratingLegalProtectionPayload;
@@ -81,8 +83,9 @@ export class PolicyService {
 
     /**
      * Create liabillity policy period set
-     * @param  {string}                                  accountNumber The account number
-     * @return {Promise<ICreatePolicyPeriodSetResponse>}               Returns the account response
+     * @param  {string}                                  accountNumber   The account number
+     * @param  {string}                                  coverageConcept The coverage concept
+     * @return {Promise<ICreatePolicyPeriodSetResponse>}                 The polic period set
      */
     createLiabillityPolicyPeriodSet(accountNumber: string, coverageConcept: string): Promise<ICreatePolicyPeriodSetResponse> {
         var parameter = policyLegalProtectionPayload;
@@ -109,10 +112,12 @@ export class PolicyService {
             });
     }
 
-        /**
-     * Create liabillity policy period set
-     * @param  {string}                                  accountNumber The account number
-     * @return {Promise<ICreatePolicyPeriodSetResponse>}               Returns the account response
+    /**
+     * Create legal protection period set
+     * @param  {string}                                  accountNumber     The account number
+     * @param  {string}                                  excessPerCaseTerm The excess per case term
+     * @param  {string}                                  workSyncTerm      The work insurance
+     * @return {Promise<ICreatePolicyPeriodSetResponse>}                   The policy period set
      */
     createLegalProtectionPolicyPeriodSet(accountNumber: string, excessPerCaseTerm: string, workSyncTerm: string): Promise<ICreatePolicyPeriodSetResponse> {
         var parameter = policyLegalProtectionPayload;
@@ -141,9 +146,9 @@ export class PolicyService {
     }
 
      /**
-     * Send quote offer for liabillity policy period set
+     * Send quote offer for a specific policy period set
      * @param  {string}                                  publicID The public identifier
-     * @return {Promise<ICreatePolicyPeriodSetResponse>}               Returns the quote offer response
+     * @return {Promise<ICreatePolicyPeriodSetResponse>}               The quote offer response
      */
     sendQuoteOffer(publicID: string): Promise<IQuoteOfferResponse> {
         console.log("publicID", publicID);
@@ -165,9 +170,9 @@ export class PolicyService {
     }
 
      /**
-     * Send quote order for liabillity policy period set
+     * Send quote order a specific policy period set
      * @param  {string}                                  publicID The public identifier
-     * @return {Promise<ICreatePolicyPeriodSetResponse>}               Returns the quote order response
+     * @return {Promise<ICreatePolicyPeriodSetResponse>}               The quote order response
      */
     sendQuoteOrder(publicID: string): Promise<IQuoteOrderResponse> {
         return this.policyApi.policyPeriodSetpublicIDZdeActionsQuoteOrderPost(publicID, {})
@@ -188,9 +193,9 @@ export class PolicyService {
     }
 
      /**
-     * Send bind order for liabillity policy period set
+     * Send bind order for a specific policy period set
      * @param  {string}                                  publicID The public identifier
-     * @return {Promise<IBindOrderResponse>}               Returns the bind order response
+     * @return {Promise<IBindOrderResponse>}               The bind order response
      */
     sendBindOrder(publicID: string): Promise<IBindOrderResponse> {
         return this.policyApi.policyPeriodSetpublicIDZdeActionsBindOrderPost(publicID, {})

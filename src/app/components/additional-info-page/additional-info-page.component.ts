@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PolicyService } from '../../services';
+import { Router } from '@angular/router';
+import { LocalStorageService, KEY_ACCOUNT_DATA, KEY_POLICY_DATA, KEY_ADDITIONAL_DATA } from '../../services/local-storage-service';
 
 @Component({
   selector: 'app-additional-info-page',
@@ -25,7 +27,7 @@ export class AdditionalInfoPageComponent implements OnInit {
 
     insuranceCosts: Array<number> = [];
 
-    constructor(private policyService: PolicyService) { }
+    constructor(private localStorageService: LocalStorageService, private router: Router, private policyService: PolicyService) { }
 
     ngOnInit() {
         this.insuranceCosts = [];
@@ -54,7 +56,15 @@ export class AdditionalInfoPageComponent implements OnInit {
     }
 
     onSubmit() {
-        console.log("Test");
+        let additionalData = {
+            familyStatus: this.familyStatus,
+            selectedDeductible_HA: this.selectedDeductible_HA,
+            selectedDeductible_RS: this.selectedDeductible_RS,
+            selectedCoverageType_HA: this.selectedCoverageType_HA,
+            selectedCoverageType_RS: this.selectedCoverageType_RS
+        };
+        this.localStorageService.write(KEY_ADDITIONAL_DATA, additionalData);
+        this.router.navigate(['/complete-checkout']);
     }
 
 }

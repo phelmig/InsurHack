@@ -15,6 +15,7 @@ import { AdditionalInfoPageComponent } from './components/additional-info-page/a
 import { CompleteCheckoutPageComponent } from './components/complete-checkout-page/complete-checkout-page.component';
 import { Md2Module }  from 'md2';
 import { LocalStorageService } from './services/local-storage-service';
+import { IndividualizeCoverageBottomSheetComponent } from './components/individualize-coverage-bottom-sheet/individualize-coverage-bottom-sheet.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/personal-details', pathMatch: 'full' },
@@ -31,6 +32,7 @@ const appRoutes: Routes = [
     IndividualizeCoveragePageComponent,
     AdditionalInfoPageComponent,
     CompleteCheckoutPageComponent,
+    IndividualizeCoverageBottomSheetComponent,
   ],
   imports: [
     BrowserModule,

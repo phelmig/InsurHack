@@ -1,3 +1,29 @@
-<p>
-  additional-info-page works!
-</p>
+<h1 class="page__header">Additional Information</h1>
+
+<form class="additional-infos-page__form form" #f="ngForm" (ngSubmit)="onSubmit()">
+
+    <h2 class="form__section-header">Haftpflicht</h2>
+
+    <md2-select placeholder="Title"  name="title" required>
+        <md2-option  value="mr">Mr.</md2-option>
+        <md2-option  value="mrs">Mrs.</md2-option>
+    </md2-select>
+
+    <div class="form__row">
+        <md-input class="form__field" placeholder="First name"  name="firstName" required></md-input>
+    </div>
+	
+	<div class="form__row">
+        <md-slider min=1 max=5 tick-interval="1" step="1" style="width:100%;"></md-slider>
+    </div>    
+	<div class="form__row">
+        <md-slide-toggle color="accent" checked="true">Text goes here</md-slide-toggle>       
+    </div>    
+<div class="form__row">
+        <md-slide-toggle color="accent" checked="true">Text goes here</md-slide-toggle>       
+    </div>    
+
+    <button md-fab type="submit" [disabled]="!f.valid" >
+        <md-icon class="md-24">keyboard_arrow_right</md-icon>
+    </button>
+</form>

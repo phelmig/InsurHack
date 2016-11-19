@@ -1,34 +1,55 @@
-<h1 class="page__header">Additional Information</h1>
+<h1 class="page__header">Coverage Details</h1>
 
 <form class="additional-infos-page__form form" #f="ngForm" (ngSubmit)="onSubmit()">
 
     <h2 class="form__section-header">General</h2>
 
-    <md2-select placeholder="Family status"  name="title" required>
+    <md2-select placeholder="Family Status" name="familyStatus" required>
         <md2-option  value="tc_Single">Single</md2-option>
         <md2-option  value="tc_Family">Family</md2-option>
     </md2-select>
+
     <h2 class="form__section-header">Personal Liability</h2>
 
-    <h3>Select deductible</h3>
+    <h3>Select Coverage Type</h3>
+    <div class="form__row">
+        <span>Type {{coverageType[selectedCoverageType_HA]}}</span>
+    </div>
+    <div class="form__row">
+        <md-slider name="slide-type-ha" min=0 max=2 tick-interval="1" [(ngModel)]="selectedCoverageType_HA" style="width:100%;"></md-slider>
+    </div>   
+
+    <h3>Select Deductible</h3>
 	<div class="form__row">
-    	<span>Deductible {{Selbstbeteiligung[selectedSB_HA]}}</span>
+    	<span>Deductible {{deductible[selectedDeductible_HA]}}</span>
     </div>
 	<div class="form__row">
-        <md-slider name="slide-sb-ha" min=0 max=4 tick-interval="1" [(ngModel)]="selectedSB_HA" style="width:100%;"></md-slider>
+        <md-slider name="slide-sb-ha" min=0 max=4 tick-interval="1" [(ngModel)]="selectedDeductible_HA" style="width:100%;"></md-slider>
     </div>    
     
-    <hr>
     <h2 class="form__section-header">Legal Protection</h2>
-<h3>Select deductible</h3>
+
+    <h3>Select Coverage Type</h3>
+    <div class="form__row">
+        <span>Type {{coverageType[selectedCoverageType_RS]}}</span>
+    </div>
+    <div class="form__row">
+        <md-slider name="slide-type-rs" min=0 max=2 tick-interval="1" [(ngModel)]="selectedCoverageType_RS" style="width:100%;"></md-slider>
+    </div>   
+
+    <h3>Select Deductible</h3>
 	<div class="form__row">
-    	<span>Deductible {{Selbstbeteiligung[selectedSB_RS]}}</span>
+    	<span>Deductible {{deductible[selectedDeductible_RS]}}</span>
     </div>
 	<div class="form__row">
-        <md-slider name="slide-sb-rs" min=0 max=4 tick-interval="1" [(ngModel)]="selectedSB_RS" style="width:100%;"></md-slider>
+        <md-slider name="slide-sb-rs" min=0 max=4 tick-interval="1" [(ngModel)]="selectedDeductible_RS" style="width:100%;"></md-slider>
     </div>    
     
     <button md-fab type="submit" [disabled]="!f.valid" >
         <md-icon class="md-24">keyboard_arrow_right</md-icon>
     </button>
 </form>
+
+<app-individualize-coverage-bottom-sheet>
+    
+</app-individualize-coverage-bottom-sheet>

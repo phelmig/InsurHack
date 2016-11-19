@@ -6,14 +6,22 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './additional-info-page.component.html',
 })
 export class AdditionalInfoPageComponent implements OnInit {
-	Selbstbeteiligung: string[] = ['0 €', '150 €', '250 €', '500 €', '1000 €'];
-	Selbstbeteiligung_out: string[] = ['tc_no_deductible', 'tc_150_eur', 'tc_250_eur', 'tc_500_eur', 'tc_1000_eur'];
+	deductible: string[] = ['0 €', '150 €', '250 €', '500 €', '1000 €'];
+	deductibleCodes: string[] = ['tc_no_deductible', 'tc_150_eur', 'tc_250_eur', 'tc_500_eur', 'tc_1000_eur'];
 
-  private selectedSB_HA: number = 1;
-  private selectedSB_RS: number = 2;
-  constructor() { }
+    coverageType: string[] = ['Bronze', 'Silver', 'Gold'];
+    coverageTypeCodes: string[] = ['tc_bronze', 'tc_silver', 'tc_gold'];
 
-  ngOnInit() {
-  }
+
+    private selectedDeductible_HA: number = 1;
+    private selectedDeductible_RS: number = 2;
+
+    private selectedCoverageType_HA: number = 1;
+    private selectedCoverageType_RS: number = 1;
+
+    constructor() { }
+
+    ngOnInit() {
+    }
 
 }

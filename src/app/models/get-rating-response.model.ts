@@ -7,11 +7,18 @@ created for InsurHack 2016 by @ph (team InsuReco)
  * Interface for GetRating responses
  */
 export interface IGetRatingResponse {
+
 	/**
 	 * The term over which the policy is active (e.g. a year=tc_one_year)
 	 * @type {string}
 	 */
 	termType: string;
+
+	/**
+	 * The end of the defined term as YYYY-MM-DD (e.g. 2017-11-06)
+	 * @type {string}
+	 */
+	termEndDate: string;
 
 	/**
 	 * gross price (over the whole term) e.g. 160.22
@@ -41,5 +48,5 @@ export interface IGetRatingResponse {
 	 * The payment TERM (e.g. tc_monthly)
 	 * @type {string}
 	 */
-	PaymentMethod: string;
+	paymentMethod: string;
 }

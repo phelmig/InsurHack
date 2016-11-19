@@ -13,7 +13,7 @@ export class IndividualizeCoveragePageComponent implements OnInit {
 
     account: IAccount;
 
-    coverage: number = 3;
+    _coverage: number;
 
     policies: Array<IPolicy> = [{
         name: "Personal Liability",
@@ -57,6 +57,17 @@ export class IndividualizeCoveragePageComponent implements OnInit {
         if(!this.account) {
             this.router.navigate(['/personal-details']);
         }
+
+        this.coverage = 2;
+    }
+
+    set coverage(coverage: number) {
+        this.onCoverageChanged(coverage);
+        this._coverage = coverage;
+    }
+
+    get coverage(): number {
+        return this._coverage;
     }
 
     getEstimatedPremium() {
@@ -78,14 +89,19 @@ export class IndividualizeCoveragePageComponent implements OnInit {
         this.router.navigate(['/additional-info']);
     }
 
-    onLevelChanged(level: number) {
-        switch (level) {
+    onCoverageChanged(coverage: number) {
+        switch (coverage) {
             case 1:
-                // code...
+                this.setPoliciesAccordingToBitmap([true, false, false, false, false]);
                 break;
-            
-            default:
-                // code...
+            case 2:
+                this.setPoliciesAccordingToBitmap([true, true, false, false, false]);
+                break;
+            case 3:
+                this.setPoliciesAccordingToBitmap([true, true, true, false, false]);
+                break;
+            case 4:
+                this.setPoliciesAccordingToBitmap([true, true, true, true, true]);
                 break;
         }
     }

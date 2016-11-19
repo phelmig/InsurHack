@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-individualize-coverage-bottom-sheet',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./individualize-coverage-bottom-sheet.component.styl']
 })
 export class IndividualizeCoverageBottomSheetComponent implements OnInit {
+
+    @Input() estimatedPremium: number;
 
   constructor() { }
 

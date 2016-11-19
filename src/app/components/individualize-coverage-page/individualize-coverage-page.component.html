@@ -1,7 +1,18 @@
 <h1 class="page__header">Individualize Your Coverage</h1>
 
-<button md-fab>
-    <md-icon class="md-24">keyboard_arrow_right</md-icon>
-</button>
+<form class="form">
+    <h2 class="form__section-header">Level of Protection</h2>
+    <div class="form__row">
+        <md-slider [(ngModel)]="coverage" name="coverage" class="form__field" min="1" max="4" step="1" tick-interval="1"></md-slider>
+    </div>
+    <h2 class="form__section-header">Included Policies</h2>
 
-<app-individualize-coverage-bottom-sheet></app-individualize-coverage-bottom-sheet>
+    <button md-fab>
+        <md-icon class="md-24">keyboard_arrow_right</md-icon>
+    </button>
+</form>
+
+<app-individualize-coverage-bottom-sheet
+    [estimatedPremium]="getEstimatedPremium()">
+    
+</app-individualize-coverage-bottom-sheet>

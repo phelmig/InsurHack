@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router} from '@angular/router';
+import { Router } from '@angular/router';
 import { LocalStorageService, KEY_ACCOUNT_DATA } from '../../services/local-storage-service';
 import { IAccount } from '../../models/account.model';
 
@@ -12,6 +12,8 @@ export class IndividualizeCoveragePageComponent implements OnInit {
 
     account: IAccount;
 
+    coverage: number = 3;
+
     constructor(private localStorageService: LocalStorageService, private router: Router) { }
 
     ngOnInit() {
@@ -20,6 +22,10 @@ export class IndividualizeCoveragePageComponent implements OnInit {
         if(!this.account) {
             this.router.navigate(['/personal-details']);
         }
+    }
+
+    getEstimatedPremium() {
+        return 142.29 + this.coverage * 12.3;
     }
 
 }

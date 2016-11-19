@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PolicyService } from '../../services';
 import { Router } from '@angular/router';
-import { LocalStorageService, KEY_ACCOUNT_DATA, KEY_POLICY_DATA, KEY_ADDITIONAL_DATA } from '../../services/local-storage-service';
+import { LocalStorageService, KEY_ACCOUNT_DATA, KEY_POLICY_DATA, KEY_ESTIMATION } from '../../services/local-storage-service';
 
 @Component({
   selector: 'app-additional-info-page',
@@ -30,11 +30,18 @@ export class AdditionalInfoPageComponent implements OnInit {
     constructor(private localStorageService: LocalStorageService, private router: Router, private policyService: PolicyService) { }
 
     ngOnInit() {
+        let storedEstimation = this.localStorageService.read(KEY_ESTIMATION);
+        this.insuranceCosts.push(storedEstimation["estimation"]);
+    }
+
+    recalculate() {
         this.insuranceCosts = [];
         this.policyService.getLegalProtectionRating("500", "true").then((rating) => {
             this.insuranceCosts.push(rating.grossPrice);
+            console.log(rating.grossPrice);
             return this.policyService.getLiabilityRating("tc_silver");
         }).then((rating) => {
+            console.log(rating.grossPrice);
             this.insuranceCosts.push(rating.grossPrice);
             this.insuranceCosts.push(100);
             this.insuranceCosts.push(100);

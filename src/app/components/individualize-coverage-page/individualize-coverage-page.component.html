@@ -8,7 +8,7 @@
     <h2 class="form__section-header">Included Policies</h2>
 
     <div *ngFor="let policy of policies">
-        <app-policy-card class="individualize-coverage-page__policy-card" [policyName]="policy.name" [selected]="policy.selected" (onSelectionChanged)="onPolicySelectionChanged(policy, $event)"></app-policy-card>
+        <app-policy-card class="individualize-coverage-page__policy-card" [policyName]="policy.name" [description]="policy.description" [insuranceCoverage]="policy.insuranceCoverage" [selected]="policy.selected" (onSelectionChanged)="onPolicySelectionChanged(policy, $event)"></app-policy-card>
     </div>
 
     <button md-fab type="submit" [disabled]="!isValid()" >
@@ -17,6 +17,7 @@
 </form>
 
 <app-individualize-coverage-bottom-sheet
-    [estimatedPremium]="getEstimatedPremium()">
+    [estimatedPremium]="getEstimatedPremium()"
+    [isEstimating]="getEstimationStatus()">
     
 </app-individualize-coverage-bottom-sheet>

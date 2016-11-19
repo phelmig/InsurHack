@@ -29,6 +29,12 @@ export interface IPolicy {
      * @type {string}
      */
     description: string;
+
+    /**
+     * The insurance coverage of the Policy
+     * @type {any}
+     */
+    insuranceCoverage: Array<any>;
 }
 
 export enum PolicyType {

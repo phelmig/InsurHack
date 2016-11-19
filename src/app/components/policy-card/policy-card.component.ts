@@ -14,6 +14,8 @@ export class PolicyCardComponent implements OnInit {
   @Input() policyName: string
   @Input() selected: boolean;
   @Input() level: number;
+  @Input() description: string;
+  @Input() insuranceCoverage: any;
 
   expanded: boolean = false;
 

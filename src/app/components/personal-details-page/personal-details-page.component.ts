@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router} from '@angular/router';
 import { NgForm } from '@angular/forms';
 import { IAccount } from '../../models/account.model';
+import { LocalStorageService, KEY_ACCOUNT_DATA } from '../../services/local-storage-service';
 
 @Component({
   selector: 'app-personal-details-page',
@@ -9,18 +11,20 @@ import { IAccount } from '../../models/account.model';
 })
 export class PersonalDetailsPageComponent implements OnInit {
 
-    account: IAccount = {
-        firstName: "",
-        lastName: ""
-    };
+    account: IAccount = {};
 
-    constructor() { }
+    constructor(private localStorageService: LocalStorageService, private router: Router) { }
 
     ngOnInit() {
+      let storedAccount = this.localStorageService.read(KEY_ACCOUNT_DATA);
+      if(storedAccount) {
+        this.account = storedAccount;
+      }
     }
 
     onSubmit(form: NgForm) {
-        console.log(this.account);
+        this.localStorageService.write(KEY_ACCOUNT_DATA, this.account);
+        this.router.navigate(['/individualize-coverage'])
     }
 
 }

@@ -13,6 +13,7 @@ import { IndividualizeCoveragePageComponent } from './components/individualize-c
 import { AdditionalInfoPageComponent } from './components/additional-info-page/additional-info-page.component';
 import { CompleteCheckoutPageComponent } from './components/complete-checkout-page/complete-checkout-page.component';
 import { Md2Module }  from 'md2';
+import { LocalStorageService } from './services/local-storage-service';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/personal-details', pathMatch: 'full' },
@@ -40,6 +41,7 @@ const appRoutes: Routes = [
   ],
   providers: [
     PolicyApi,
+    LocalStorageService,
     {
       provide: Configuration, useValue: new Configuration("d06a9843-ce15-30a4-9af8-30b848015e5e")
     }],

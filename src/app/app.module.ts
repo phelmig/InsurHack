@@ -12,6 +12,7 @@ import { PersonalDetailsPageComponent } from './components/personal-details-page
 import { IndividualizeCoveragePageComponent } from './components/individualize-coverage-page/individualize-coverage-page.component';
 import { AdditionalInfoPageComponent } from './components/additional-info-page/additional-info-page.component';
 import { CompleteCheckoutPageComponent } from './components/complete-checkout-page/complete-checkout-page.component';
+import { Md2Module }  from 'md2';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/personal-details', pathMatch: 'full' },
@@ -34,7 +35,8 @@ const appRoutes: Routes = [
     FormsModule,
     HttpModule,
     RouterModule.forRoot(appRoutes),
-    MaterialModule.forRoot()
+    MaterialModule.forRoot(),
+    Md2Module.forRoot()
   ],
   providers: [
     PolicyApi,

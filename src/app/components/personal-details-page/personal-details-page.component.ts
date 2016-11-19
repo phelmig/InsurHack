@@ -5,6 +5,7 @@ import { IAccount } from '../../models/account.model';
 @Component({
   selector: 'app-personal-details-page',
   templateUrl: './personal-details-page.component.html',
+  styleUrls: ['./personal-details-page.component.styl']
 })
 export class PersonalDetailsPageComponent implements OnInit {
 

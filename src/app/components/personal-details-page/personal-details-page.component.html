@@ -1,7 +1,41 @@
-<form #f="ngForm" (ngSubmit)="onSubmit()">
-    <md-input placeholder="First name" [(ngModel)]="account.firstName" name="firstName" required></md-input>
-    <br />
-    <md-input placeholder="Last name" [(ngModel)]="account.lastName" name="lastName" required></md-input>
+<h1 class="page__header">Enter Your Information</h1>
+
+<form class="personal-details-page__form form" #f="ngForm" (ngSubmit)="onSubmit()">
+
+    <h2 class="form__section-header">Personal Details</h2>
+
+    <md2-select placeholder="Title" [(ngModel)]="account.title" name="title" required>
+        <md2-option  value="mr">Mr.</md2-option>
+        <md2-option  value="mrs">Mrs.</md2-option>
+    </md2-select>
+
+    <div class="form__row">
+        <md-input class="form__field" placeholder="First name" [(ngModel)]="account.firstName" name="firstName" required></md-input>
+    </div>
+
+    <div class="form__row">
+        <md-input class="form__field" placeholder="Last name" [(ngModel)]="account.lastName" name="lastName" required></md-input>
+    </div>
+
+    <h2 class="form__section-header">Contact Information</h2>
+
+    <div class="form__row">
+        <md-input class="form__field personal-details-page__field--street-name" placeholder="Street name" [(ngModel)]="account.streetName" name="streetName" required></md-input>
+        <md-input class="form__field personal-details-page__field--street-number" placeholder="Number" [(ngModel)]="account.streetNumber" name="streetNumber" required></md-input>
+    </div>
+    <div class="form__row">
+        <md-input class="form__field personal-details-page__field--zip-code" placeholder="ZIP Code" [(ngModel)]="account.zipCode" name="zipCode" required></md-input>
+        <md-input class="form__field personal-details-page__field--city" placeholder="City" [(ngModel)]="account.city" name="city" required></md-input>
+    </div>
+
+    <md2-select placeholder="Country" [(ngModel)]="account.countryCode" name="country" required>
+        <md2-option selected value="de">Germany</md2-option>
+        <md2-option value="us">United States of America</md2-option>
+    </md2-select>
+
+    <div class="form__row">
+        <md-input class="form__field" placeholder="Email Address" [(ngModel)]="account.email" name="email" required></md-input>
+    </div>
 
     <button md-fab type="submit" [disabled]="!f.valid" >
         <md-icon class="md-24">add</md-icon>

@@ -10,9 +10,15 @@ export interface IGetRatingResponse {
 
 	/**
 	 * The term over which the policy is active (e.g. a year=tc_one_year)
+	 *
+	 * Possible Values:
+	 * tc_Annual	Annual
+	 * tc_HalfYear	6 months
+	 * tc_Other	Other
+	 * tc_two_years	
+
 	 * @type {string}
-	 */
-	termType: string;
+	 */termType: string;
 
 	/**
 	 * The end of the defined term as YYYY-MM-DD (e.g. 2017-11-06)
@@ -40,12 +46,22 @@ export interface IGetRatingResponse {
 
 	/**
 	 * The policies currency (e.g. tc_eur)
+	 * tc_aud	AUD
+	 * tc_cad	CAD
+	 * tc_eur	EUR
+	 * tc_gbp	GBP
+	 * tc_jpy	JPY
+	 * tc_rub	RUB
+	 * tc_usd	USD
+	 * 
 	 * @type {string}
 	 */
 	currency: string;
 
 	/**
 	 * The payment TERM (e.g. tc_monthly)
+	 * ! Docu says otherwhise: https://api.insurhack.com/gi-doc/index.html#/pc/data-dictionary/enums/PaymentMethod
+	 * 
 	 * @type {string}
 	 */
 	paymentMethod: string;

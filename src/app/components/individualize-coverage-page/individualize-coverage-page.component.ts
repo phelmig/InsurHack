@@ -78,4 +78,22 @@ export class IndividualizeCoveragePageComponent implements OnInit {
         this.router.navigate(['/additional-info']);
     }
 
+    onLevelChanged(level: number) {
+        switch (level) {
+            case 1:
+                // code...
+                break;
+            
+            default:
+                // code...
+                break;
+        }
+    }
+
+    setPoliciesAccordingToBitmap(bitmap: Array<boolean>) {
+        this.policies.forEach((policy, i) => {
+            policy.selected = bitmap[i];
+        });
+    }
+
 }

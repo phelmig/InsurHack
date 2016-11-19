@@ -1,0 +1,45 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import { RouterModule, Routes } from '@angular/router';
+import { MaterialModule } from '@angular/material';
+import { Configuration } from './swagger';
+import { PolicyApi } from './swagger/api/PolicyApi';
+import { AppComponent } from './components/app.component';
+import { HomeComponent } from './components/home/home.component';
+import { HeaderBarComponent } from './components/header-bar/header-bar.component';
+import { PersonalDetailsPageComponent } from './components/personal-details-page/personal-details-page.component';
+import { IndividualizeCoveragePageComponent } from './components/individualize-coverage-page/individualize-coverage-page.component';
+import { AdditionalInfoPageComponent } from './components/additional-info-page/additional-info-page.component';
+import { CompleteCheckoutPageComponent } from './components/complete-checkout-page/complete-checkout-page.component';
+
+const appRoutes: Routes = [
+  { path: '', component: HomeComponent }
+];
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    HeaderBarComponent,
+    PersonalDetailsPageComponent,
+    IndividualizeCoveragePageComponent,
+    AdditionalInfoPageComponent,
+    CompleteCheckoutPageComponent,
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    RouterModule.forRoot(appRoutes),
+    MaterialModule.forRoot()
+  ],
+  providers: [
+    PolicyApi,
+    {
+      provide: Configuration, useValue: new Configuration("d06a9843-ce15-30a4-9af8-30b848015e5e")
+    }],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

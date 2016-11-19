@@ -315,7 +315,7 @@ export class PolicyApi {
             method: RequestMethod.Post,
             headers: headers,
             body: payload == null ? '' : JSON.stringify(payload), // https://github.com/angular/angular/issues/10612
-            search: queryParameters
+            search: queryParameters,
         });
         
         // https://github.com/swagger-api/swagger-codegen/issues/4037
@@ -424,7 +424,7 @@ export class PolicyApi {
      * @param payload Request Body
      */
     public policyPeriodSetpublicIDZdeActionsBindOrderPostWithHttpInfo(publicID: string, payload?: models.Payload4, extraHttpRequestParams?: any): Observable<Response> {
-        const path = this.basePath + `/PolicyPeriod_Set(&#39;${publicID}&#39;)/zde.actions.BindOrder`;
+        const path = this.basePath + "/PolicyPeriod_Set('"+publicID+"')/zde.actions.BindOrder";
 
         let queryParameters = new URLSearchParams();
         let headers = new Headers(this.defaultHeaders.toJSON()); // https://github.com/angular/angular/issues/6845
@@ -469,8 +469,8 @@ export class PolicyApi {
      * @param payload Request Body
      */
     public policyPeriodSetpublicIDZdeActionsQuoteOfferPostWithHttpInfo(publicID: string, payload?: models.Payload5, extraHttpRequestParams?: any): Observable<Response> {
-        const path = this.basePath + `/PolicyPeriod_Set(&#39;${publicID}&#39;)/zde.actions.QuoteOffer`;
-
+        const path = this.basePath + "/PolicyPeriod_Set('"+publicID+"')/zde.actions.QuoteOffer";
+        console.log(path);
         let queryParameters = new URLSearchParams();
         let headers = new Headers(this.defaultHeaders.toJSON()); // https://github.com/angular/angular/issues/6845
         // verify required parameter 'publicID' is not null or undefined
@@ -487,14 +487,12 @@ export class PolicyApi {
         let produces: string[] = [
         ];
         
-            
-
         headers.set('Content-Type', 'application/json');
-
 
         let requestOptions: RequestOptionsArgs = new RequestOptions({
             method: RequestMethod.Post,
             headers: headers,
+
             body: payload == null ? '' : JSON.stringify(payload), // https://github.com/angular/angular/issues/10612
             search: queryParameters
         });
@@ -514,7 +512,7 @@ export class PolicyApi {
      * @param payload Request Body
      */
     public policyPeriodSetpublicIDZdeActionsQuoteOrderPostWithHttpInfo(publicID: string, payload?: models.Payload6, extraHttpRequestParams?: any): Observable<Response> {
-        const path = this.basePath + `/PolicyPeriod_Set(&#39;${publicID}&#39;)/zde.actions.QuoteOrder`;
+        const path = this.basePath + "/PolicyPeriod_Set('"+publicID+"')/zde.actions.QuoteOrder";
 
         let queryParameters = new URLSearchParams();
         let headers = new Headers(this.defaultHeaders.toJSON()); // https://github.com/angular/angular/issues/6845

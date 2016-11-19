@@ -50,6 +50,7 @@ export class AccountApi {
         if (configuration) {
             this.configuration = configuration;
         }
+        this.defaultHeaders.append("Authorization", "Bearer "+ this.configuration.accessToken);
     }
 	
 	/**

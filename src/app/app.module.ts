@@ -17,6 +17,10 @@ import { Md2Module }  from 'md2';
 import { LocalStorageService } from './services/local-storage-service';
 import { IndividualizeCoverageBottomSheetComponent } from './components/individualize-coverage-bottom-sheet/individualize-coverage-bottom-sheet.component';
 import { PolicyCardComponent } from './components/policy-card/policy-card.component';
+import { KellyMonsterPageComponent } from './components/kelly-monster-page/kelly-monster-page.component';
+import { KellyPageComponent } from './components/kelly-page/kelly-page.component';
+import { KellyMonsterSharePageComponent } from './components/kelly-monster-share-page/kelly-monster-share-page.component';
+import { InstasurePageComponent } from './components/instasure-page/instasure-page.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/personal-details', pathMatch: 'full' },
@@ -35,6 +39,10 @@ const appRoutes: Routes = [
     CompleteCheckoutPageComponent,
     IndividualizeCoverageBottomSheetComponent,
     PolicyCardComponent,
+    KellyMonsterPageComponent,
+    KellyPageComponent,
+    KellyMonsterSharePageComponent,
+    InstasurePageComponent,
   ],
   imports: [
     BrowserModule,

@@ -14,7 +14,7 @@ export class IndividualizeCoveragePageComponent implements OnInit {
 
     account: IAccount;
 
-    coverage: number = 3;
+    _coverage: number;
 
     isEstimating = true;
 
@@ -87,6 +87,17 @@ export class IndividualizeCoveragePageComponent implements OnInit {
         })
 
         //rates here
+
+        this.coverage = 2;
+    }
+
+    set coverage(coverage: number) {
+        this.onCoverageChanged(coverage);
+        this._coverage = coverage;
+    }
+
+    get coverage(): number {
+        return this._coverage;
     }
 
     getEstimatedPremium() {
@@ -114,6 +125,29 @@ export class IndividualizeCoveragePageComponent implements OnInit {
     onSubmit() {
         this.localStorageService.write(KEY_POLICY_DATA, this.policies);
         this.router.navigate(['/additional-info']);
+    }
+
+    onCoverageChanged(coverage: number) {
+        switch (coverage) {
+            case 1:
+                this.setPoliciesAccordingToBitmap([true, false, false, false, false]);
+                break;
+            case 2:
+                this.setPoliciesAccordingToBitmap([true, true, false, false, false]);
+                break;
+            case 3:
+                this.setPoliciesAccordingToBitmap([true, true, true, false, false]);
+                break;
+            case 4:
+                this.setPoliciesAccordingToBitmap([true, true, true, true, true]);
+                break;
+        }
+    }
+
+    setPoliciesAccordingToBitmap(bitmap: Array<boolean>) {
+        this.policies.forEach((policy, i) => {
+            policy.selected = bitmap[i];
+        });
     }
 
 }

@@ -18,7 +18,8 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "assets/styles/styles.styl"
+        "assets/styles/styles.styl",
+        "assets/styles/md-theme.scss"
       ],
       "scripts": [
       ],

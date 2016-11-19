@@ -7,7 +7,6 @@ import { MaterialModule } from '@angular/material';
 import { Configuration } from './swagger';
 import { PolicyApi } from './swagger/api/PolicyApi';
 import { AppComponent } from './components/app.component';
-import { HomeComponent } from './components/home/home.component';
 import { HeaderBarComponent } from './components/header-bar/header-bar.component';
 import { PersonalDetailsPageComponent } from './components/personal-details-page/personal-details-page.component';
 import { IndividualizeCoveragePageComponent } from './components/individualize-coverage-page/individualize-coverage-page.component';
@@ -15,13 +14,15 @@ import { AdditionalInfoPageComponent } from './components/additional-info-page/a
 import { CompleteCheckoutPageComponent } from './components/complete-checkout-page/complete-checkout-page.component';
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent }
+  { path: '', redirectTo: '/personal-details', pathMatch: 'full' },
+  { path: 'personal-details', component: PersonalDetailsPageComponent },
+  { path: 'individualize-coverage', component: IndividualizeCoveragePageComponent },
+  { path: 'additional-info', component: AdditionalInfoPageComponent },
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     HeaderBarComponent,
     PersonalDetailsPageComponent,
     IndividualizeCoveragePageComponent,

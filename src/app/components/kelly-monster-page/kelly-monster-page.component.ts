@@ -5,7 +5,8 @@ import {
   state,
   style,
   transition,
-  animate
+  animate,
+  OnInit
 } from '@angular/core';
 
 @Component({

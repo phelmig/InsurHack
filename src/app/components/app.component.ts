@@ -12,21 +12,21 @@ export class AppComponent {
 
     constructor(policyService: PolicyService, accountService: AccountService) {
         let publicID;
-        policyService.getLiabilityRating().then(() => {
+        policyService.getLegalProtectionRating("500", "true").then(() => {
             return accountService.createAccount("Alex", "Klein");
         }).then(acc => {
-            return policyService.createLiabillityPolicyPeriodSet(acc.accountNumber);
+             return policyService.createLegalProtectionPolicyPeriodSet(acc.accountNumber, "500", "true");
         }).then(set => {
-            publicID = set.publicID;
-            return policyService.sendQuoteOffer(publicID);
+          publicID = set.publicID;
+          return policyService.sendQuoteOffer(publicID);
         }).then(() => {
-            return policyService.sendQuoteOrder(publicID);
+           return policyService.sendQuoteOrder(publicID);
         }).then(() => {
-             return policyService.sendBindOrder(publicID);
-        }).then(() => {
-             console.log("Great success");
+            return policyService.sendBindOrder(publicID);
+        }).then((ins) => {
+           console.log("Successful", ins);
         }).catch(err => {
-            console.log(err);
+           console.log(err);
         });
     }
 }

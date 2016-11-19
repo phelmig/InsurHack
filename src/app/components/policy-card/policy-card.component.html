@@ -1,1 +1,13 @@
-<md-checkbox></md-checkbox>
+<div class="policy-card__header-row">
+    <md-checkbox class="policy-card__checkbox"
+        [checked]="selected"
+        color="primary">
+    </md-checkbox>
+    <div class="policy-card__policy-name">{{policyName}}</div>
+    <a (click)="toggleExpand($event)">
+        <md-icon class="md-24">expand_more</md-icon>
+    </a>
+</div>
+<div class="policy-card__additional-content">
+    Test
+</div>

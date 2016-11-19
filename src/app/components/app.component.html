@@ -1,4 +1,5 @@
-<app-header-bar></app-header-bar>
+<app-header-bar *ngIf="!doHideBanner()"></app-header-bar>
+<app-monster-bar *ngIf="showMonsterBanner()"></app-monster-bar>
 
 <main class="content">
     <router-outlet></router-outlet>

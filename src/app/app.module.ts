@@ -9,6 +9,7 @@ import { PolicyApi } from './swagger/api/PolicyApi';
 import { AccountApi } from './swagger/api/AccountApi';
 import { AppComponent } from './components/app.component';
 import { HeaderBarComponent } from './components/header-bar/header-bar.component';
+import { MonsterBarComponent } from './components/monster-bar/monster-bar.component';
 import { PersonalDetailsPageComponent } from './components/personal-details-page/personal-details-page.component';
 import { IndividualizeCoveragePageComponent } from './components/individualize-coverage-page/individualize-coverage-page.component';
 import { AdditionalInfoPageComponent } from './components/additional-info-page/additional-info-page.component';
@@ -23,7 +24,11 @@ import { KellyMonsterSharePageComponent } from './components/kelly-monster-share
 import { InstasurePageComponent } from './components/instasure-page/instasure-page.component';
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/personal-details', pathMatch: 'full' },
+  { path: '', redirectTo: '/start', pathMatch: 'full' },
+  { path: 'start', component: InstasurePageComponent },
+  { path: 'kelly', component: KellyPageComponent },
+  { path: 'kelly-monster', component: KellyMonsterPageComponent },
+  { path: 'kelly-monster-share', component: KellyMonsterSharePageComponent },
   { path: 'personal-details', component: PersonalDetailsPageComponent },
   { path: 'individualize-coverage', component: IndividualizeCoveragePageComponent },
   { path: 'additional-info', component: AdditionalInfoPageComponent },
@@ -33,6 +38,7 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HeaderBarComponent,
+    MonsterBarComponent,
     PersonalDetailsPageComponent,
     IndividualizeCoveragePageComponent,
     AdditionalInfoPageComponent,

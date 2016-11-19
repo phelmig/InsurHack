@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./instasure-page.component.styl']
 })
 export class InstasurePageComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit() {

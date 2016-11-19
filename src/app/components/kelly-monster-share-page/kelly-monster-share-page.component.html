@@ -1,19 +1,14 @@
-	<div style="text-align: center;">
-	<a [routerLink]="['/personal-details']"><img class="less-margin kelly-center less-margin" src="assets/images/kelly-1024.png" /></a>
+<div style="text-align: center;">
+	<img class="less-margin kelly-center less-margin" src="assets/images/kelly-1024.png" />
 	<h1>Kelly Weybull (27)</h1>
-	<h3>Applying for great jobs ... </h3>
-	<p>
-	<img  class="responsive  slideExpandUp" src="assets/images/info-mock.png"/>
-	</p>
-	<p>
-	<img  class="responsive  slideExpandUp" src="assets/images/info-mock.png"/>
-	</p>
-	<p>
-	<img  class="responsive  slideExpandUp" src="assets/images/info-mock.png"/>
-	</p>
-	<p>
-	<img class="responsive  slideExpandUp" src="assets/images/info-mock.png"/>
-	</p>
-	
+	<h3>Learning about instasure ... </h3>
+	<div class="policy-card__header-row">
+		<md-checkbox class="policy-card__checkbox" #allowData color="primary">
+		</md-checkbox>
+		<div class="policy-card__policy-name">Allow Jobster to share my information with instasure</div>
+		
 	</div>
-
+	<div style="padding-top: 50px;">
+		<button [routerLink]="['/personal-details']" md-raised-button color="accent" [disabled]="!allowData.checked">Continue on instasure</button>
+	</div>
+</div>

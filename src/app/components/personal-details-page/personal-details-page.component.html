@@ -1,7 +1,9 @@
-<md-input placeholder="First name"></md-input>
+<form #f="ngForm" (ngSubmit)="onSubmit()">
+    <md-input placeholder="First name" [(ngModel)]="account.firstName" name="firstName" required></md-input>
+    <br />
+    <md-input placeholder="Last name" [(ngModel)]="account.lastName" name="lastName" required></md-input>
 
-<md-input placeholder="Last name"></md-input>
-
-<button md-fab [routerLink]="['/individualize-coverage']">
-    <md-icon class="md-24">add</md-icon>
-</button>
+    <button md-fab type="submit" [disabled]="!f.valid" >
+        <md-icon class="md-24">add</md-icon>
+    </button>
+</form>

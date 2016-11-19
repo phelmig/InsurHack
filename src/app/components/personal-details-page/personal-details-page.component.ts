@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { IAccount } from '../../models/account.model';
 
 @Component({
   selector: 'app-personal-details-page',
@@ -6,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonalDetailsPageComponent implements OnInit {
 
-  constructor() { }
+    account: IAccount = {
+        firstName: "",
+        lastName: ""
+    };
 
-  ngOnInit() {
-  }
+    constructor() { }
+
+    ngOnInit() {
+    }
+
+    onSubmit(form: NgForm) {
+        console.log(this.account);
+    }
 
 }

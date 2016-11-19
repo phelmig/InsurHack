@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MaterialModule } from '@angular/material';
 import { Configuration } from './swagger';
 import { PolicyApi } from './swagger/api/PolicyApi';
+import { AccountApi } from './swagger/api/AccountApi';
 import { AppComponent } from './components/app.component';
 import { HeaderBarComponent } from './components/header-bar/header-bar.component';
 import { PersonalDetailsPageComponent } from './components/personal-details-page/personal-details-page.component';
@@ -40,6 +41,7 @@ const appRoutes: Routes = [
   ],
   providers: [
     PolicyApi,
+    AccountApi,
     {
       provide: Configuration, useValue: new Configuration("d06a9843-ce15-30a4-9af8-30b848015e5e")
     }],

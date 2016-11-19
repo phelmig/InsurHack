@@ -1,8 +1,10 @@
 import { AccountApi } from '../swagger/api/AccountApi'
 import { Injectable } from '@angular/core';
+import { createAccount } from './payloads/create-account';
+import { ICreateAccountResponse } from '../models/create-account.model';
 
 @Injectable()
-export class PolicyService {
+export class AccountService {
 
     protected accountApi: AccountApi;
     
@@ -10,8 +12,28 @@ export class PolicyService {
       this.accountApi = accountApi;
     }
 
-    createAccount() {
+    createAccount(firstName: string, lastName: string) {
+        var parameter = createAccount;
+        parameter["AccountHolderContact"]["FirstName"] = firstName;
+        parameter["AccountHolderContact"]["LastName"] = lastName;
         
+        return this.accountApi
+            .accountSetPost(parameter)
+            .toPromise()
+            .then((res) => {
+                let model:ICreateAccountResponse = {
+                    accountNumber: res["AccountNumber"],
+                    primaryLanguage: res["PrimaryLanguage"],
+                    title: res["AccountHolderContact"]["Prefix"],
+                    firstName: res["AccountHolderContact"]["FirstName"],
+                    lastName: res["AccountHolderContact"]["LastName"],
+                    city: res["AccountHolderContact"]["PrimaryAddress"]["City"],
+                    street: res["AccountHolderContact"]["PrimaryAddress"]["AddressLine1"],
+                    zip: res["AccountHolderContact"]["PrimaryAddress"]["PostalCode"]
+                };
+                //console.log(model);
+                return model;
+            });
     }
 
 }

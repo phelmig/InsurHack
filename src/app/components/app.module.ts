@@ -5,9 +5,9 @@ import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 import { MaterialModule } from '@angular/material';
 import { Configuration } from '../swagger';
-import { PolicyApi } from '../swagger/api/PolicyApi';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { PolicyApi } from '../swagger/api/PolicyApi'
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent }
@@ -26,6 +26,7 @@ const appRoutes: Routes = [
     MaterialModule.forRoot()
   ],
   providers: [
+    PolicyApi,
     {
       provide: Configuration, useValue: new Configuration("d06a9843-ce15-30a4-9af8-30b848015e5e")
     }],

@@ -1,19 +1,17 @@
 import { Component } from '@angular/core';
-import { PolicyApi } from '../swagger/api/PolicyApi';
+import { PolicyService } from '../services';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [PolicyApi]
+  providers: [PolicyService]
 })
 export class AppComponent {
 
-  title = 'Hello World!';
+    title = 'Hello World!';
 
-  constructor(policyApi: PolicyApi) {
-      policyApi.policyPeriodSetGet().subscribe( (response) => {
-          console.log(response);
-      });
-  }
+    constructor(policyService: PolicyService) {
+      policyService.getLiabilityRating();
+    }
 }

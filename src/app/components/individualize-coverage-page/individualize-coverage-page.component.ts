@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { LocalStorageService, KEY_ACCOUNT_DATA, KEY_POLICY_DATA } from '../../services/local-storage-service';
+import { LocalStorageService, KEY_ACCOUNT_DATA, KEY_POLICY_DATA, KEY_ESTIMATION } from '../../services/local-storage-service';
 import { IAccount } from '../../models/account.model';
 import { IPolicy, PolicyType } from '../../models/policy.model';
 import { PolicyService, AccountService } from '../../services';
@@ -124,6 +124,7 @@ export class IndividualizeCoveragePageComponent implements OnInit {
 
     onSubmit() {
         this.localStorageService.write(KEY_POLICY_DATA, this.policies);
+        this.localStorageService.write(KEY_ESTIMATION, {"estimation": this.getEstimatedPremium()});
         this.router.navigate(['/additional-info']);
     }
 

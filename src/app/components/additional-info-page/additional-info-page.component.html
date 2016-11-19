@@ -50,6 +50,8 @@
     </button>
 </form>
 
-<app-individualize-coverage-bottom-sheet>
+<app-individualize-coverage-bottom-sheet
+    [estimatedPremium]="getEstimatedPremium()"
+    [isEstimating]="getEstimationStatus()">
     
 </app-individualize-coverage-bottom-sheet>

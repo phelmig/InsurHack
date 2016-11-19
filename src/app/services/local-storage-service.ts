@@ -3,7 +3,7 @@ export const KEY_ACCOUNT_DATA = "accountData";
 
 export const KEY_POLICY_DATA = "policyData";
 
-export const KEY_ADDITIONAL_DATA = "additionalData";
+export const KEY_ESTIMATION = "estimation";
 
 /**
  * Simple interface to the Local Storage

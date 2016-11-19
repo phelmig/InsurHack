@@ -12,19 +12,7 @@ import {
 @Component({
   selector: 'app-kelly-monster-page',
   templateUrl: './kelly-monster-page.component.html',
-  styleUrls: ['./kelly-monster-page.component.styl'],
-  animations: [
-  trigger('flyInOut', [
-    state('in', style({transform: 'translateX(0)'})),
-    transition('void => *', [
-      style({transform: 'translateX(-100%)'}),
-      animate(100)
-    ]),
-    transition('* => void', [
-      animate(100, style({transform: 'translateX(100%)'}))
-    ])
-  ])
-]
+  styleUrls: ['./kelly-monster-page.component.styl']
 
 })
 export class KellyMonsterPageComponent implements OnInit {

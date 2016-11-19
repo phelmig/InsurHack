@@ -4,7 +4,7 @@
 
     <h2 class="form__section-header">General</h2>
 
-    <md2-select placeholder="Family Status" name="familyStatus" required>
+    <md2-select [(ngModel)]="familyStatus" placeholder="Family Status" name="familyStatus" required>
         <md2-option  value="tc_Single">Single</md2-option>
         <md2-option  value="tc_Family">Family</md2-option>
     </md2-select>

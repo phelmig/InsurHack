@@ -74,7 +74,13 @@ export class IndividualizeCoveragePageComponent implements OnInit {
         if(!this.account) {
             this.router.navigate(['/personal-details']);
         }
+
+        this.coverage = 2;
+    }
+
+    reloadRates() {
         this.insuranceCosts = [];
+        this.isEstimating = true;
         this.policyService.getLegalProtectionRating("500", "true").then((rating) => {
             this.insuranceCosts.push(rating.grossPrice);
             return this.policyService.getLiabilityRating("tc_silver");
@@ -85,10 +91,6 @@ export class IndividualizeCoveragePageComponent implements OnInit {
             this.insuranceCosts.push(100);
             this.isEstimating = false;
         })
-
-        //rates here
-
-        this.coverage = 2;
     }
 
     set coverage(coverage: number) {
@@ -102,8 +104,9 @@ export class IndividualizeCoveragePageComponent implements OnInit {
 
     getEstimatedPremium() {
         let costs = 0;
-        for(let price of this.insuranceCosts) {
-            costs += price;
+        for(let i in this.insuranceCosts) {
+            if (this.policies[i].selected)
+                costs += this.insuranceCosts[i];
         }
         return costs;
     }
@@ -143,6 +146,7 @@ export class IndividualizeCoveragePageComponent implements OnInit {
                 this.setPoliciesAccordingToBitmap([true, true, true, true, true]);
                 break;
         }
+        this.reloadRates();
     }
 
     setPoliciesAccordingToBitmap(bitmap: Array<boolean>) {

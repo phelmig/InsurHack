@@ -9,21 +9,21 @@ import { LocalStorageService, KEY_ACCOUNT_DATA, KEY_POLICY_DATA, KEY_ESTIMATION,
 })
 export class AdditionalInfoPageComponent implements OnInit {
 	deductible: string[] = ['0€', '150€', '250€', '500€', '1000€'];
-	deductibleCodes: string[] = ['tc_no_deductible', 'tc_150_eur', 'tc_250_eur', 'tc_500_eur', 'tc_1000_eur'];
+	deductibleCodes: string[] = ['0', '150', '250', '500', '1000'];
 
     coverageType: string[] = ['Bronze', 'Silver', 'Gold'];
     coverageTypeCodes: string[] = ['tc_bronze', 'tc_silver', 'tc_gold'];
 
 
-    selectedDeductible_HA: number = 1;
-    selectedDeductible_RS: number = 2;
+    _selectedDeductible_HA: number = 1;
+    _selectedDeductible_RS: number = 2;
 
-    selectedCoverageType_HA: number = 1;
-    selectedCoverageType_RS: number = 1;
+    _selectedCoverageType_HA: number = 1;
+    _selectedCoverageType_RS: number = 1;
 
-    familyStatus: string;
+    _familyStatus: string;
 
-    isEstimating = true;
+    isEstimating = false;
 
     insuranceCosts: Array<number> = [];
 
@@ -34,14 +34,58 @@ export class AdditionalInfoPageComponent implements OnInit {
         this.insuranceCosts.push(storedEstimation["estimation"]);
     }
 
+    get selectedDeductible_HA(): number {
+        return this._selectedDeductible_HA;
+    }
+
+    get selectedDeductible_RS(): number {
+        return this._selectedDeductible_RS;
+    }
+
+    get selectedCoverageType_HA(): number {
+        return this._selectedCoverageType_HA;
+    }
+
+    get selectedCoverageType_RS(): number {
+        return this._selectedCoverageType_RS;
+    }
+
+    get familyStatus(): string {
+        return this._familyStatus;
+    }
+
+    set selectedDeductible_HA(value: number) {
+        this._selectedDeductible_HA = value;
+        this.recalculate();
+    }
+
+    set selectedDeductible_RS(value: number) {
+        this._selectedDeductible_RS = value;
+        this.recalculate();
+    }
+
+    set selectedCoverageType_HA(value: number) {
+        this._selectedCoverageType_HA = value;
+        this.recalculate();
+    }
+
+    set selectedCoverageType_RS(value: number) {
+        this._selectedCoverageType_RS = value;
+        this.recalculate();
+    }
+
+    set familyStatus(value: string) {
+        this._familyStatus = value;
+        this.recalculate();
+    }
+
     recalculate() {
         this.insuranceCosts = [];
-        this.policyService.getLegalProtectionRating("500", "true").then((rating) => {
+        this.isEstimating = true;
+        this.policyService.getLegalProtectionRating(this.deductibleCodes[this._selectedDeductible_RS], "false").then((rating) => {
             this.insuranceCosts.push(rating.grossPrice);
-            console.log(rating.grossPrice);
-            return this.policyService.getLiabilityRating("tc_silver");
+            return this.policyService.getLiabilityRating(this.coverageTypeCodes[this._selectedCoverageType_HA]);
         }).then((rating) => {
-            console.log(rating.grossPrice);
             this.insuranceCosts.push(rating.grossPrice);
             this.insuranceCosts.push(100);
             this.insuranceCosts.push(100);

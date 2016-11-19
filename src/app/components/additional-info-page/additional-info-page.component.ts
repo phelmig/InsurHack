@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PolicyService } from '../../services';
 import { Router } from '@angular/router';
-import { LocalStorageService, KEY_ACCOUNT_DATA, KEY_POLICY_DATA, KEY_ESTIMATION } from '../../services/local-storage-service';
+import { LocalStorageService, KEY_ACCOUNT_DATA, KEY_POLICY_DATA, KEY_ESTIMATION, KEY_ADDITIONAL_DATA } from '../../services/local-storage-service';
 
 @Component({
   selector: 'app-additional-info-page',

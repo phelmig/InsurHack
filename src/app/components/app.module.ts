@@ -4,9 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 import { MaterialModule } from '@angular/material';
-
+import { Configuration, PolicyApi } from '../swagger';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+
+console.log(PolicyApi);
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent }
@@ -24,7 +26,11 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     MaterialModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    PolicyApi,
+    {
+      provide: Configuration, useValue: new Configuration("d06a9843-ce15-30a4-9af8-30b848015e5e")
+    }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

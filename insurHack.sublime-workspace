@@ -1,0 +1,1269 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pro",
+				"processLeaves	property"
+			],
+			[
+				"proce",
+				"processSelection	property"
+			],
+			[
+				"remove",
+				"removeAssignedProcessForParagraph	method"
+			],
+			[
+				"getPro",
+				"getProcessById	method"
+			],
+			[
+				"par",
+				"paragraphId	parameter"
+			],
+			[
+				"as",
+				"assignement	parameter"
+			],
+			[
+				"any",
+				"AnalyserNode	interface"
+			],
+			[
+				"por",
+				"processes"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"type",
+				"typeof	keyword"
+			],
+			[
+				"ex",
+				"extends	keyword"
+			],
+			[
+				"const",
+				"constructor	keyword"
+			],
+			[
+				"P",
+				"Paragraph	class"
+			],
+			[
+				"IA",
+				"IApiModel	alias"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"NgS",
+				"NgSwitchWhen	alias"
+			],
+			[
+				"res",
+				"results	local var"
+			],
+			[
+				"ro",
+				"routeParams	property"
+			],
+			[
+				"Pro",
+				"Promise	class"
+			],
+			[
+				"Ime",
+				"ImplementationStatus	alias"
+			],
+			[
+				"toL",
+				"toLocaleDateString	method"
+			],
+			[
+				"Loca",
+				"LocalDatePipe	alias"
+			],
+			[
+				"to",
+				"toISOString	method"
+			],
+			[
+				"Pip",
+				"PipeTransform	alias"
+			],
+			[
+				"_tr",
+				"_transformRegulationResponse	method"
+			],
+			[
+				"IReg",
+				"IRegulationResponse	alias"
+			],
+			[
+				"_",
+				"_createRegulation	method"
+			],
+			[
+				"tran",
+				"_transformRegulationResponse	method"
+			],
+			[
+				"l",
+				"legalField	property"
+			],
+			[
+				"leg",
+				"legalBases	property"
+			],
+			[
+				"I",
+				"ImplementationStatus	enum"
+			],
+			[
+				"Im",
+				"ImplementationStatus	enum"
+			],
+			[
+				"p",
+				"publishDate	property"
+			],
+			[
+				"ILeg",
+				"ILegalField	alias"
+			],
+			[
+				"t",
+				"toISOString	method"
+			],
+			[
+				"_create",
+				"_createRegulation	method"
+			],
+			[
+				"Re",
+				"Regulation	alias"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"c",
+				"classifyService	property"
+			],
+			[
+				"cre",
+				"createRegulatorySourceForm	property"
+			],
+			[
+				"u",
+				"updateValue	method"
+			],
+			[
+				"v",
+				"value	property"
+			],
+			[
+				"Vali",
+				"Validators	alias"
+			],
+			[
+				"COntr",
+				"ControlGroup	alias"
+			],
+			[
+				"n",
+				"nowrap"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"th",
+				"th	Tag"
+			],
+			[
+				"_cre",
+				"_createRegulatorySource	method"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"IRe",
+				"IRegulatorySource	alias"
+			],
+			[
+				"Regul",
+				"RegulatorySource	alias"
+			],
+			[
+				"opt",
+				"option	Tag"
+			],
+			[
+				"re",
+				"reverse	method"
+			],
+			[
+				"process",
+				"processList	local var"
+			],
+			[
+				"cure",
+				"currentProcessNode	local var"
+			],
+			[
+				"Proces",
+				"ProcessTreeComponent	alias"
+			],
+			[
+				"Proc",
+				"ProcessTreeComponent	class"
+			],
+			[
+				"do",
+				"documentContent	property"
+			],
+			[
+				"doc",
+				"documentContent	property"
+			],
+			[
+				"proc",
+				"processId	parameter"
+			],
+			[
+				"we",
+				"weight	parameter"
+			],
+			[
+				"Pr",
+				"Process	alias"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"Rou",
+				"RouteParams	alias"
+			],
+			[
+				"navi",
+				"NavigationDirective	alias"
+			],
+			[
+				"Htm",
+				"HTMLElement	interface"
+			],
+			[
+				"Ele",
+				"ElementRef	alias"
+			],
+			[
+				"Na",
+				"NavigationDirective	alias"
+			],
+			[
+				"cons",
+				"constructor	keyword"
+			],
+			[
+				"Clas",
+				"ClassificationComponent	alias"
+			],
+			[
+				"con",
+				"console	var"
+			],
+			[
+				"route",
+				"Router	alias"
+			],
+			[
+				"Cust",
+				"CustomRouterLink	alias"
+			],
+			[
+				"Router",
+				"RouterOutlet	alias"
+			],
+			[
+				"cou",
+				"cursor"
+			],
+			[
+				"Ro",
+				"RouterLink	alias"
+			],
+			[
+				"Proce",
+				"ProcessListComponent	alias"
+			],
+			[
+				"A",
+				"Array	interface"
+			],
+			[
+				"in",
+				"hasInputError	property"
+			],
+			[
+				"cl",
+				"classificationResults	property"
+			],
+			[
+				"pr",
+				"processing	property"
+			],
+			[
+				"pare",
+				"parents"
+			],
+			[
+				"paren",
+				"parentPromises"
+			],
+			[
+				"curre",
+				"currentParent"
+			],
+			[
+				"current",
+				"currentParent"
+			],
+			[
+				"chid",
+				"childProcess"
+			],
+			[
+				"db",
+				"dbImport"
+			],
+			[
+				"child",
+				"childProcesses"
+			],
+			[
+				"k",
+				"keywordConfig"
+			],
+			[
+				"kew",
+				"keywordOutput"
+			],
+			[
+				"cate",
+				"categoryConfig"
+			],
+			[
+				"co",
+				"config"
+			],
+			[
+				"unique",
+				"uniqueBagOne"
+			],
+			[
+				"index",
+				"indexOf"
+			],
+			[
+				"bag",
+				"bagOne"
+			],
+			[
+				"pre",
+				"preprocessedInputOne"
+			],
+			[
+				"document",
+				"documentsByCategory"
+			],
+			[
+				"docu",
+				"documentsByCategory"
+			],
+			[
+				"train",
+				"trainingData"
+			],
+			[
+				"trai",
+				"trainingData"
+			],
+			[
+				"dim",
+				"dimensionIdfs"
+			],
+			[
+				"_ca",
+				"_createBagOFWords"
+			],
+			[
+				"tra",
+				"trainingData"
+			],
+			[
+				"vec",
+				"vectorSpace"
+			],
+			[
+				"input",
+				"inputVector"
+			],
+			[
+				"word",
+				"wordCount"
+			],
+			[
+				"d",
+				"dimensions"
+			],
+			[
+				"ve",
+				"vectorSpace"
+			],
+			[
+				"vect",
+				"vectorValueNormalized"
+			],
+			[
+				"categ",
+				"categories"
+			],
+			[
+				"un",
+				"uniqueSet"
+			],
+			[
+				"ba",
+				"bagOfWords"
+			],
+			[
+				"cat",
+				"categoryBagOfWords"
+			],
+			[
+				"ca",
+				"categoryBagOfWords"
+			],
+			[
+				"lsa",
+				"LSAPath"
+			],
+			[
+				"call",
+				"callback"
+			],
+			[
+				"instance",
+				"instanceBag"
+			],
+			[
+				"im",
+				"importSingleFile"
+			],
+			[
+				"categor",
+				"categoryKeyword"
+			],
+			[
+				"spli",
+				"splittedLine"
+			],
+			[
+				"output",
+				"outputVector"
+			],
+			[
+				"key",
+				"keywordPath"
+			],
+			[
+				"catr",
+				"categoryVector"
+			],
+			[
+				"ste",
+				"stemmedTokens"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "{\"@odata.context\":\"$metadata#zde.complextypes.BasicQuoteResult\",\"Status\":\"tc_Quoted\",\"UWIssues\":[],\"ReplacementPolicies\":[],\"TermType_ZDE\":\"tc_two_years\",\"TermEndDate_ZDE\":\"2017-11-08\",\"CostsSummary\":{\"GrossPremium\":{\"Amount\":225.52,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"NetPremium\":{\"Amount\":194.16,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"GrossPremiumPerPaymentPeriod\":{\"Amount\":18.79,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"LinesCosts\":[{\"FutureTax\":null,\"GrossPremium\":{\"Amount\":225.52,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"LineSubtype\":\"tc_HRHausratLine_ZDE\",\"NetPremium\":{\"Amount\":194.16,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"GrossPremiumPerPaymentPeriod\":{\"Amount\":18.79,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"FutureGrossPremium\":null,\"CoveragesCosts\":[],\"CoverablesCosts\":[{\"FutureTax\":null,\"GrossPremium\":{\"Amount\":225.52,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"ODataID\":null,\"NetPremium\":{\"Amount\":194.16,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"GrossPremiumPerPaymentPeriod\":{\"Amount\":18.79,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"FutureGrossPremium\":null,\"CoveragesCosts\":[{\"Period\":\"07.11.2016 - 07.11.2017\",\"Name\":\"Schäden durch versicherte Gefahren am Hausrat\",\"GrossPremium\":{\"Amount\":225.52,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"NetPremium\":{\"Amount\":194.16,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"GrossPremiumPerPaymentPeriod\":{\"Amount\":18.79,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"Tax\":null,\"ApproximateTax\":{\"Amount\":31.36,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"PatternPublicID\":\"HR_HouseholdCov\",\"TaxPercent\":0.1615,\"ODataCustomRemove\":null},{\"Period\":\"07.11.2016 - 07.11.2017\",\"Name\":\"Hausrat in Garagen\",\"GrossPremium\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"NetPremium\":{\"Amount\":0,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"GrossPremiumPerPaymentPeriod\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"Tax\":null,\"ApproximateTax\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"PatternPublicID\":\"HR_GarageCov\",\"TaxPercent\":0.1615,\"ODataCustomRemove\":null},{\"Period\":\"07.11.2016 - 07.11.2017\",\"Name\":\"Sachen in gewerblich genutzten Büroräumen in Ihrer Wohnung\",\"GrossPremium\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"NetPremium\":{\"Amount\":0,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"GrossPremiumPerPaymentPeriod\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"Tax\":null,\"ApproximateTax\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"PatternPublicID\":\"HR_CommercialSpaceCov\",\"TaxPercent\":0.1615,\"ODataCustomRemove\":null},{\"Period\":\"07.11.2016 - 07.11.2017\",\"Name\":\"Haustiere, die regelmäßig artgerecht in Ihrer Wohnung gehalten werden  (z.B. Fische, Katzen, Vögel)\",\"GrossPremium\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"NetPremium\":{\"Amount\":0,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"GrossPremiumPerPaymentPeriod\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"Tax\":null,\"ApproximateTax\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"PatternPublicID\":\"HR_PetsCov\",\"TaxPercent\":0.1615,\"ODataCustomRemove\":null},{\"Period\":\"07.11.2016 - 07.11.2017\",\"Name\":\"Als Mieter/Wohnungseigentümer eingebrachte/ übernommene Einbaumöbel\",\"GrossPremium\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"NetPremium\":{\"Amount\":0,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"GrossPremiumPerPaymentPeriod\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"Tax\":null,\"ApproximateTax\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"PatternPublicID\":\"HR_BuiltInFurnitureCov\",\"TaxPercent\":0.1615,\"ODataCustomRemove\":null},{\"Period\":\"07.11.2016 - 07.11.2017\",\"Name\":\"Selbstfahrende Krankenfahrstühle, Rasenmäher, Go Karts und Spielfahrzeuge, sofern nicht versicherungspflichtig\",\"GrossPremium\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"NetPremium\":{\"Amount\":0,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"GrossPremiumPerPaymentPeriod\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"Tax\":null,\"ApproximateTax\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"PatternPublicID\":\"HR_VehiclesCov\",\"TaxPercent\":0.1615,\"ODataCustomRemove\":null},{\"Period\":\"07.11.2016 - 07.11.2017\",\"Name\":\"Bargeld, auf Geldkarten geladene Beträge\",\"GrossPremium\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"NetPremium\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"GrossPremiumPerPaymentPeriod\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"Tax\":null,\"ApproximateTax\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"PatternPublicID\":\"HR_CashCreditCardCov\",\"TaxPercent\":0.1615,\"ODataCustomRemove\":null},{\"Period\":\"07.11.2016 - 07.11.2017\",\"Name\":\"Wertsachen\",\"GrossPremium\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"NetPremium\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"GrossPremiumPerPaymentPeriod\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"Tax\":null,\"ApproximateTax\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"PatternPublicID\":\"HR_ValueableCov\",\"TaxPercent\":0.1615,\"ODataCustomRemove\":null},{\"Period\":\"07.11.2016 - 07.11.2017\",\"Name\":\"Schäden durch Anprall/ Absturz\",\"GrossPremium\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"NetPremium\":{\"Amount\":0,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"GrossPremiumPerPaymentPeriod\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"Tax\":null,\"ApproximateTax\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"PatternPublicID\":\"HR_CollisionCov\",\"TaxPercent\":0.1615,\"ODataCustomRemove\":null},{\"Period\":\"07.11.2016 - 07.11.2017\",\"Name\":\"Schäden an Gefrier- und Kühlgut durch unvorhersehbaren Stromausfall\",\"GrossPremium\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"NetPremium\":{\"Amount\":0,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"GrossPremiumPerPaymentPeriod\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"Tax\":null,\"ApproximateTax\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"PatternPublicID\":\"HR_FrozenCov\",\"TaxPercent\":0.1615,\"ODataCustomRemove\":null},{\"Period\":\"07.11.2016 - 07.11.2017\",\"Name\":\"Beitragsübernahme bei unverschuldeter Arbeitslosigkeit\",\"GrossPremium\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"NetPremium\":{\"Amount\":0,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"GrossPremiumPerPaymentPeriod\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"Tax\":null,\"ApproximateTax\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"PatternPublicID\":\"HR_UnemployCov\",\"TaxPercent\":0.1615,\"ODataCustomRemove\":null},{\"Period\":\"07.11.2016 - 07.11.2017\",\"Name\":\"Schäden durch  bestimmungswidrigen Wasseraustritt\",\"GrossPremium\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"NetPremium\":{\"Amount\":0,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"GrossPremiumPerPaymentPeriod\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"Tax\":null,\"ApproximateTax\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"PatternPublicID\":\"HR_WaterCov\",\"TaxPercent\":0.1615,\"ODataCustomRemove\":null},{\"Period\":\"07.11.2016 - 07.11.2017\",\"Name\":\"Einfacher Diebstahl Gartenmöbel/ -geräte (inkl. Rasenmäher- und Poolroboter, Grillgeräte)\",\"GrossPremium\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"NetPremium\":{\"Amount\":0,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"GrossPremiumPerPaymentPeriod\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"Tax\":null,\"ApproximateTax\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"PatternPublicID\":\"HR_GardenFurnitTool2SimpleTheftCov\",\"TaxPercent\":0.1615,\"ODataCustomRemove\":null},{\"Period\":\"07.11.2016 - 07.11.2017\",\"Name\":\"Einfacher Diebstahl Sonstiges\",\"GrossPremium\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"NetPremium\":{\"Amount\":0,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"GrossPremiumPerPaymentPeriod\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"Tax\":null,\"ApproximateTax\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"PatternPublicID\":\"HR_SimpleTheftOtherCov\",\"TaxPercent\":0.1615,\"ODataCustomRemove\":null},{\"Period\":\"07.11.2016 - 07.11.2017\",\"Name\":\"Außenversicherung\",\"GrossPremium\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"NetPremium\":{\"Amount\":0,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"GrossPremiumPerPaymentPeriod\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"Tax\":null,\"ApproximateTax\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"PatternPublicID\":\"HR_OutsideCov\",\"TaxPercent\":0.1615,\"ODataCustomRemove\":null},{\"Period\":\"07.11.2016 - 07.11.2017\",\"Name\":\"Einbruchdiebstahl aus der verschlossenen Schiffskabine eines Kreuzfahrt- oder Fährschiffes oder aus dem verschlossenen Schlafwagenabteil\",\"GrossPremium\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"NetPremium\":{\"Amount\":0,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"GrossPremiumPerPaymentPeriod\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"Tax\":null,\"ApproximateTax\":{\"Amount\":0.00,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"PatternPublicID\":\"HR_ShipCabinSleepCoachCov\",\"TaxPercent\":0.1615,\"ODataCustomRemove\":null}],\"CoverableType\":\"entity.HRApartment_ZDE\",\"Tax\":{\"Amount\":31.36,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"PublicID\":\"pc:112\",\"FutureNetPremium\":null,\"CoverableName\":\"1: Wohneinheit\",\"TaxPercent\":0.1615,\"ODataCustomRemove\":null}],\"Tax\":{\"Amount\":31.36,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"FutureNetPremium\":null,\"TaxPercent\":0.1615,\"ODataCustomRemove\":null}],\"Tax\":{\"Amount\":31.36,\"Currency\":\"tc_eur\",\"ODataCustomRemove\":null},\"PaymentMethod\":\"tc_monthly\",\"TaxPercent\":null,\"ODataCustomRemove\":null},\"ODataCustomRemove\":null}",
+			"file": "src/app/app.component.css",
+			"file_size": 0,
+			"file_write_time": 131239742353926234,
+			"settings":
+			{
+				"buffer_size": 9956,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/alex/public/insurhack/typescript-angular2-client/api/AccountApi.ts",
+			"settings":
+			{
+				"buffer_size": 12794,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/alex/public/insurhack/typescript-angular2-client/api/PolicyApi.ts",
+			"settings":
+			{
+				"buffer_size": 24047,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/api/PolicyApi.ts",
+			"settings":
+			{
+				"buffer_size": 24056,
+				"line_ending": "Unix",
+				"name": "PolicyApi.ts"
+			}
+		},
+		{
+			"contents": "export class Configuration {\n    apiKey: string;\n    username: string;\n    password: string;\n    accessToken: string;\n}",
+			"file": "configurations.ts",
+			"file_size": 17,
+			"file_write_time": 131239810314489476,
+			"settings":
+			{
+				"buffer_size": 119,
+				"line_ending": "Unix",
+				"name": "configurations.ts"
+			}
+		},
+		{
+			"file": "index.ts",
+			"settings":
+			{
+				"buffer_size": 8,
+				"line_ending": "Unix",
+				"name": "index.ts"
+			}
+		},
+		{
+			"file": "src/app/index.ts",
+			"settings":
+			{
+				"buffer_size": 30,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 309.0,
+		"last_filter": "error",
+		"selected_items":
+		[
+			[
+				"error",
+				"TypeScript: Show Error List"
+			],
+			[
+				"package control in",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Add Channel"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 453.0
+	},
+	"console":
+	{
+		"height": 132.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/alex/public/insurhack/InsurHack"
+	],
+	"file_history":
+	[
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/regulation-create/regulation-create.html",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/regulation-create/regulation-create.ts",
+		"/home/alex/Master/bib/Master's thesis.bib",
+		"/media/DATA/Master/crime_prediction_zip_identification.txt",
+		"/home/alex/Documents/crime_prediction_zip_identification.txt",
+		"/home/alex/Documents/10.1007%2F3-540-33173-5_2.bib",
+		"/media/DATA/Master/census_gecoder/run.js",
+		"/media/DATA/Master/RocketLoop-Data/rl_demographics_m.csv",
+		"/media/DATA/Downloads/matrix_training/matrix_training.csv",
+		"/media/DATA/Downloads/matrix_test/matrix_test.csv",
+		"/media/DATA/Downloads/lowerDim.html",
+		"/media/DATA/Downloads/ProblemListFemaleSplittedFinal/studyIDCpFemale.csv",
+		"/media/DATA/Downloads/pennsylvania_female/pennsylvania_female_normalized.csv",
+		"/media/DATA/Downloads/problem_list_female/ordered_problem_list_female.csv",
+		"/home/alex/public/insurhack/angular2-starter/src/app/home/home.html",
+		"/tmp/.fr-kxYCAb/pennsylvania_all_050.csv",
+		"/media/DATA/Downloads/model3.html",
+		"/tmp/.fr-CHyaOM/pennsylvania_all_050.csv",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/models/model.ts",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/models/paragraph.ts",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/regulation-paragraph/regulation-paragraph.ts",
+		"/media/DATA/Master/standardize.pig",
+		"/media/DATA/Master/join_all.pig",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/regulation-section/regulation-section.html",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/styles/style.css",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/regulation-section/regulation-section.ts",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/regulation-paragraph/regulation-paragraph.html",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/models/section.ts",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/services/classify-service.ts",
+		"/data/florian/Documents/Uni/Master/RocketLoop/rl_demographics_m.csv",
+		"/data/florian/Documents/Uni/Master/RocketLoop/rl_dx_patients_m.csv",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/services/classify-service.ts",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/regulation-content/regulation-content.html",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/regulation-section/regulation-section.html",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/styles/style.css",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/regulation-content/regulation-content.ts",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/regulation-section/regulation-section.ts",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/regulation-detail/regulation-detail.ts",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/regulation-create/regulation-create.ts",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/regulation-create/regulation-create.html",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/models/regulation.ts",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/regulation-detail/regulation-detail.html",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/models/section.ts",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/models/paragraph.ts",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/models/model.ts",
+		"/home/florian/Development/Work/Bancalis/classify-web/node_modules/gulp-typescript/package.json",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/regulation-view/regulation-view.ts",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/regulation-view/regulation-view.html",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/regulation-list/regulation-list.ts",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/regulation-list/regulation-list.html",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/pipes/local-date.ts",
+		"/home/florian/Development/Work/Bancalis/classify-web/build/app/models/regulation.js",
+		"/home/florian/Development/Work/Bancalis/classify-web/package.json",
+		"/home/florian/Development/Work/Bancalis/classify-web/node_modules/angular2/package.json",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/bootstrap.ts",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/regulation-catalog/regulation-catalog.ts",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/regulation-settings/regulation-settings.ts",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/regulation-catalog/regulation-catalog.html",
+		"/home/florian/Development/Work/Bancalis/classify-web/node_modules/angular2/typings/es6-promise/es6-promise.d.ts",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/regulation-settings/regulation-settings.html",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/regulations/regulations.html",
+		"/home/florian/Downloads/new_schema3.dump",
+		"/home/florian/Public/Work/Rocketloop/website/views/layout.jade",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/app/app.ts",
+		"/home/florian/Downloads/Data/rl_dx_patients_m.csv",
+		"/home/florian/Downloads/Data/rl_problem_list_m.csv",
+		"/home/florian/Downloads/Data/rl_demographics_m.csv",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/process-tree/process-tree.ts",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/process-create/process-create.html",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/process-create/process-create.ts",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/app/app.html",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/models/regulatory-source.ts",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/regulations/regulations.ts",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/processes/processes.ts",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/process-detail/process-detail.html",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/process-tree/process-tree.html",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/process-tree/process-tree.ts",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/process-list/process-list.html",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/bootstrap.ts",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/document-detail/document-detail.html",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/process-detail/process-detail.ts",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/process-create/process-create.ts",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/process-create/process-create.html",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/process-list/process-list.ts",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/document-detail/document-detail.ts",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/process-detail/process-detail.html",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/new-document/new-document.html",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/new-document/new-document.ts",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/classify/classify.html",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/regulations/regulations.ts",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/classify/classify.ts",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/processes/processes.ts",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/models/document.ts",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/models/keyword.ts",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/app/app.ts",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/institution/institution.ts",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/models/process.ts",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/index.html",
+		"/home/alex/public/rocketloop/bancalis/classify-web/gulpfile.js",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/process-list/process-list.html",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/classify/classify.html",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/institution/institution.html",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/directives/navigation/navigation.ts",
+		"/home/florian/Development/Work/Bancalis/classify-web/node_modules/systemjs/dist/system.js.map",
+		"/home/florian/Development/Work/Bancalis/classify-web/node_modules/systemjs/dist/system.src.js",
+		"/home/florian/Development/Work/Bancalis/classify-web/node_modules/systemjs/dist/system.js",
+		"/home/florian/Development/Work/Bancalis/classify-web/node_modules/angular2/bundles/angular2-polyfills.min.js",
+		"/home/florian/Development/Work/Bancalis/classify-web/node_modules/gulp-rename/package.json",
+		"/home/florian/Development/Work/Bancalis/classify-web/tsconfig.json",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/processes/processes.html",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/classification/classification.ts",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/classification/classification.html",
+		"/home/florian/Development/Work/Bancalis/classify-web/build/styles/style.css",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/process-list/process-list.ts",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/models/process.ts",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/directives/custom-router-link.ts",
+		"/home/florian/Development/Work/Bancalis/classify-web/build/design.html",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/index.html",
+		"/home/florian/Development/Work/Bancalis/classify-web/build/index.html",
+		"/home/florian/Development/Work/Bancalis/classify-web/design.html",
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/services/data-service.ts",
+		"/home/florian/Public/bucket/gulpfile.js",
+		"/home/florian/Public/bucket/package.json",
+		"/home/florian/Development/Work/Bancalis/classify-web/src/app/components/app/app-component.ts",
+		"/home/florian/Development/Work/Bancalis/classify-cli/classify.js",
+		"/home/florian/Development/Work/Bancalis/classify-cli/compare/two.txt",
+		"/home/florian/Development/Work/Bancalis/classify-cli/compare/input.txt",
+		"/home/florian/Development/Work/Bancalis/classify-cli/training/Risikomanagement:Operationelle_Risiken.txt"
+	],
+	"find":
+	{
+		"height": 15159.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/home/florian/Development/Work/Bancalis/classify-web/src/app",
+			"/home/alex/public/rocketloop/bancalis/classify-web/src/app",
+			"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components",
+			"/home/alex/public/rocketloop/bancalis/classify-web/",
+			"/home/alex/public/rocketloop",
+			"/home/alex/public/studentica/web",
+			"/home/alex/public/studentica/sway",
+			"/home/alex/public/studentica/web",
+			"/home/alex/public/studentica/web/views",
+			"/home/alex/public/studentica/web/view",
+			"/home/alex/public/studentica/web"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"policyPeriodSetGetWithHttpInfo",
+			"status",
+			"edit",
+			"bind",
+			"ngfor",
+			"ass",
+			"Male,White,Married,Protestant,17820,Full Time,English,GEISINGER HEALTH SYSTEM SOLUTIONS G70,1",
+			"ngif",
+			"*ngSwitchWhen=\"",
+			"section",
+			"formD",
+			"form",
+			"h1.ui.section.header {\n    font-size: 1.75em;\n}\n\n",
+			"h1.ui.section.header {\n    font-size: 1.75em;\n}\n",
+			"template",
+			";\n",
+			"status",
+			"content",
+			"view",
+			"View",
+			"view",
+			"View",
+			"Section",
+			"LegalAct",
+			"import { LegalAct, ILegalAct } from '../models/legal-act';\n",
+			"Section",
+			"ISection",
+			"title",
+			"= ",
+			"shorthand",
+			"title",
+			"processId",
+			"weight",
+			"value",
+			"RegulationDetailComponent",
+			"detail",
+			"\n            ",
+			"import",
+			"getReg",
+			";",
+			": ",
+			"number",
+			"string",
+			",",
+			"_createRegulatorySource",
+			"23593",
+			"catalog",
+			"create",
+			"ng",
+			"RouterLink",
+			"routerLink",
+			"index",
+			"ng-if",
+			"ng-model",
+			"ng-for",
+			"ng-if",
+			"ng-model",
+			"router-link",
+			"    <script src=\"/libs/system.js\"></script>\n",
+			"import { Component, View, NgFor} from 'angular2/core';\n",
+			"processes",
+			"ProcessesComponent",
+			"classification",
+			"list",
+			"classification",
+			"classify",
+			"ClassifyComponent",
+			"item",
+			"pointing",
+			"secondary",
+			"active",
+			"div",
+			"classify",
+			"\" ",
+			"IClassificationResult",
+			"processes",
+			"DataService",
+			"dashboard",
+			"getAllProcesses",
+			"ClassifyDatabaseProvider",
+			"orm.Sequelize",
+			"orm.models",
+			"orm.sequelize",
+			"modelImport",
+			"currentParentProcess",
+			"parentProcesses",
+			"currentChildProcesses",
+			"input",
+			"init",
+			"currentCategory",
+			",",
+			"\n",
+			",",
+			"\"",
+			"\n",
+			" ",
+			",",
+			"\n",
+			",",
+			"\n",
+			",",
+			"\n",
+			",",
+			"\n",
+			"des",
+			"Positionen des",
+			" ",
+			"Gesamtrisikopositionen",
+			"risikopositionen",
+			"Risikopositionen",
+			"bestehenden\nRisikopositionen",
+			"\n",
+			",",
+			"\n",
+			",",
+			"\n",
+			",",
+			"\n",
+			",",
+			"\n",
+			",",
+			" ",
+			",",
+			"\n",
+			",",
+			"\n",
+			",",
+			"\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"ngIf",
+			"ngModel",
+			"ngFor",
+			"ngIf",
+			"ngModel",
+			"routerLink",
+			" ",
+			" \"",
+			"\",",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/app/app.component.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9956,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9956,
+								9956
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 98641.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/alex/public/insurhack/typescript-angular2-client/api/AccountApi.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12794,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1875,
+								1875
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"use_tab_stops": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 1197.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/alex/public/insurhack/typescript-angular2-client/api/PolicyApi.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 24047,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2086,
+								2086
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 627.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/api/PolicyApi.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 24056,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1721,
+								1721
+							]
+						],
+						"settings":
+						{
+							"auto_name": "PolicyApi.ts",
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 285.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "configurations.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 119,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								119,
+								119
+							]
+						],
+						"settings":
+						{
+							"auto_name": "configurations.ts",
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "index.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8,
+								8
+							]
+						],
+						"settings":
+						{
+							"auto_name": "index.ts",
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/app/index.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 30,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17,
+								17
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.errorlist":
+	{
+		"height": 273.0
+	},
+	"output.exec":
+	{
+		"height": 124.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 124.0
+	},
+	"pinned_build_system": "",
+	"project": "insurHack.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Development/Work/Bancalis/classify/classify.sublime-project"
+			],
+			[
+				"i",
+				"~/public/studentica/web/web.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 257.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

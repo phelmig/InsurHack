@@ -1,0 +1,35 @@
+@import '../../../assets/styles/_common'
+
+:host
+    display block
+    border-radius 0.25rem
+    background color-background-darker
+    opacity 0.6
+    
+    &.policy-card--selected
+        opacity 1
+    
+    &.policy-card--expanded
+        .policy-card__additional-content
+            display flex
+            
+    
+.policy-card
+    
+    &__header-row
+        display flex
+        flex-direction row
+        padding 1rem
+        
+    &__additional-content
+        display none
+        padding 1rem
+        padding-top 0
+    
+    &__checkbox
+        margin-right 0.5rem
+        pointer-events none
+
+    &__policy-name
+        flex 1
+        font-size 1.125rem

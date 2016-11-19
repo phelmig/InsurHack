@@ -1,6 +1,8 @@
 
 export const KEY_ACCOUNT_DATA = "accountData";
 
+export const KEY_POLICY_DATA = "policyData";
+
 /**
  * Simple interface to the Local Storage
  */

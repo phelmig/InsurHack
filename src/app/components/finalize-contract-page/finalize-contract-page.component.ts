@@ -42,9 +42,8 @@ export class FinalizeContractPageComponent implements OnInit {
       }).then(() => {
           return this.policyService.sendBindOrder(publicID);
       }).then(() => {
-          console.log("Great Success");
-          //this.isFinalizing = false;
-          //this.router.navigate(['/kelly-monster']);
+          this.isFinalizing = false;
+          this.router.navigate(['/kelly-monster']);
       }).catch(err => {
           console.log(err);
       });

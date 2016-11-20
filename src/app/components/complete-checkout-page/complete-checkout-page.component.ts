@@ -28,7 +28,10 @@ import { LocalStorageService, KEY_ACCOUNT_DATA, KEY_POLICY_DATA, KEY_ESTIMATION,
 })
 export class CompleteCheckoutPageComponent implements OnInit {
 
-  paymentData: IPaymentData = {};
+  paymentData: IPaymentData = {
+      "IBAN": "DE89 3704 0044 0532 0130 00",
+      "BIC": "37040044"
+  };
   premium: number;
   policies: Array<IPolicy>;
   account: IAccount;

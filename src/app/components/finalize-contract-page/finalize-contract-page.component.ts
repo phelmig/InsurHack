@@ -7,11 +7,14 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-finalize-contract-page',
   templateUrl: './finalize-contract-page.component.html',
-  styleUrls: ['./finalize-contract-page.component.styl']
+  styleUrls: ['./finalize-contract-page.component.styl'],
+  host: {
+    "(click)": "onClickAfterFinalized()"
+  }
 })
 export class FinalizeContractPageComponent implements OnInit {
 
-  isFinalizing: boolean = true;
+  finalized: boolean = false;
 
   constructor(private localStorageService: LocalStorageService, private router: Router, private policyService: PolicyService, private accountService: AccountService) { };
 
@@ -42,11 +45,17 @@ export class FinalizeContractPageComponent implements OnInit {
       }).then(() => {
           return this.policyService.sendBindOrder(publicID);
       }).then(() => {
-          this.isFinalizing = false;
-          this.router.navigate(['/kelly-monster']);
+          this.finalized = true;
+          
       }).catch(err => {
           console.log(err);
       });
+  }
+
+  onClickAfterFinalized() {
+    if (this.finalized) {
+      this.router.navigate(['/kelly-monster']);
+    }
   }
 
 }

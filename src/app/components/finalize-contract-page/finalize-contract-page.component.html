@@ -1,1 +1,12 @@
-<img class="finalize-contract-page__spinner" *ngIf="isFinalizing" src="/assets/images/spinner_big.gif" alt="loading"/>
+<div class="finalize-contract-page__container" *ngIf="!finalized">
+    <img class="finalize-contract-page__image" src="/assets/images/spinner_big.gif" alt="loading"/>
+    <div class="finalize-contract-page__label">
+    Your contract is being finalized...
+    </div>
+</div>
+<div class="finalize-contract-page__container" *ngIf="finalized">
+    <img class="finalize-contract-page__image" src="/assets/images/checkmark.png" alt="loading"/>
+    <div class="finalize-contract-page__label">
+    That's it, you are insured!
+    </div>
+</div>

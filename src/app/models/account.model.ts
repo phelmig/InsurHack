@@ -19,6 +19,24 @@ export interface IAccount {
     lastName?: string;
 
     /**
+     * The date of birth of the Account
+     * @type {string}
+     */
+    dob?: string;
+
+    /**
+     * The highest degree of education of the Account
+     * @type {string}
+     */
+    degree?: string;
+
+    /**
+     * The field of study of the Accoutn
+     * @type {string}
+     */
+    field?: string;
+
+    /**
      * The street name of the Account
      * @type {string}
      */

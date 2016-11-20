@@ -17,7 +17,31 @@
         <md-input class="form__field" placeholder="Last name" [(ngModel)]="account.lastName" name="lastName" required></md-input>
     </div>
 
+    <div class="form_row">
+        <md2-datepicker class="form__field" [(ngModel)]="account.dob" name="dob" placeholder="Date of Birth" required></md2-datepicker>
+    </div>
+
+    <md2-select class="form__field personal-details-page__field--degree" placeholder="Academic Degree" [(ngModel)]="account.degree" name="degree" required>
+        <md2-option  value="bsc">Master of Science (M.Sc.)</md2-option>
+        <md2-option  value="msc">Bachelor of Science (B.Sc.)</md2-option>
+        <md2-option  value="ba">Master of Arts (M.A.)</md2-option>
+        <md2-option  value="ma">Bachelor of Arts (B.A.)</md2-option>
+    </md2-select>
+
+    <md2-select placeholder="Field of Study" [(ngModel)]="account.field" name="field" required>
+        <md2-option  value="comp_sci">Computer Science</md2-option>
+        <md2-option  value="elec_eng">Electrical Engineering</md2-option>
+        <md2-option  value="bio_eng">Biological Engineering</md2-option>
+        <md2-option  value="chem_eng">Chemical Engineering</md2-option>
+        <md2-option  value="econ">Economics</md2-option>
+        <md2-option  value="phil">Philiosophy</md2-option>
+    </md2-select>
+
     <h2 class="form__section-header">Contact Information</h2>
+
+    <div class="form__row">
+        <md-input class="form__field" placeholder="Email Address" [(ngModel)]="account.email" name="email" type="email" required></md-input>
+    </div>
 
     <div class="form__row">
         <md-input class="form__field personal-details-page__field--street-name" placeholder="Street name" [(ngModel)]="account.streetName" name="streetName" required></md-input>
@@ -32,10 +56,6 @@
         <md2-option selected value="de">Germany</md2-option>
         <md2-option value="us">United States of America</md2-option>
     </md2-select>
-
-    <div class="form__row">
-        <md-input class="form__field" placeholder="Email Address" [(ngModel)]="account.email" name="email" required></md-input>
-    </div>
 
     <button md-fab type="submit" [disabled]="!f.valid" >
         <md-icon class="md-24">keyboard_arrow_right</md-icon>

@@ -37,7 +37,7 @@ export class AdditionalInfoPageComponent implements OnInit {
     ngOnInit() {
         let storedEstimation = this.localStorageService.read(KEY_ESTIMATION);
         this.policies = <Array<IPolicy>> this.localStorageService.read(KEY_POLICY_DATA);
-
+        console.log(this.policies);
         this.insuranceCosts.push(storedEstimation["estimation"]);
     }
 
@@ -104,6 +104,12 @@ export class AdditionalInfoPageComponent implements OnInit {
             return this.policyService.getLiabilityRating(this.coverageTypeCodes[this._selectedCoverageType_HA]);
         }).then((rating) => {
             this.insuranceCosts.push(rating.grossPrice);
+            //Occupational Incapacity
+            this.insuranceCosts.push(100);
+            //Accident
+            this.insuranceCosts.push(100);
+            //Household
+            this.insuranceCosts.push(100);
             this.isEstimating = false;
         })
     }

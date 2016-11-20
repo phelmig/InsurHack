@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"acc",
+				"accountNumber	let"
+			],
+			[
 				"pubc",
 				"publicID	let"
 			],
@@ -510,28 +514,24 @@
 			[
 				"call",
 				"callback"
-			],
-			[
-				"instance",
-				"instanceBag"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "src/app/swagger/api/PolicyApi.ts",
+			"file": "src/app/services/policy-service.ts",
 			"settings":
 			{
-				"buffer_size": 24134,
+				"buffer_size": 10479,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/app/swagger/api/AccountApi.ts",
+			"file": "src/app/services/payloads/policy-period-liabillity.ts",
 			"settings":
 			{
-				"buffer_size": 12890,
+				"buffer_size": 1059,
 				"line_ending": "Unix"
 			}
 		},
@@ -539,48 +539,49 @@
 			"file": "src/app/services/account-service.ts",
 			"settings":
 			{
-				"buffer_size": 1517,
+				"buffer_size": 1777,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/app/services/policy-service.ts",
+			"file": "src/app/components/additional-info-page/additional-info-page.component.ts",
 			"settings":
 			{
-				"buffer_size": 6804,
+				"buffer_size": 4339,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/app/swagger/api/ProducerApi.ts",
+			"file": "src/app/components/finalize-contract-page/finalize-contract-page.component.ts",
 			"settings":
 			{
-				"buffer_size": 4839,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/app/models/bind-order.model.ts",
-			"settings":
-			{
-				"buffer_size": 1421,
+				"buffer_size": 2292,
 				"line_ending": "Unix",
-				"name": "bind-order.model.ts"
+				"name": "finalize-contract-page.component.ts"
 			}
 		},
 		{
-			"file": "src/app/models/quote-offer.model.ts",
+			"file": "src/app/components/finalize-contract-page/finalize-contract-page.component.html",
 			"settings":
 			{
-				"buffer_size": 1423,
+				"buffer_size": 114,
+				"line_ending": "Unix",
+				"name": "finalize-contract-page.component.html"
+			}
+		},
+		{
+			"file": "src/app/components/finalize-contract-page/finalize-contract-page.component.styl",
+			"settings":
+			{
+				"buffer_size": 115,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/app/models/quote-order.model.ts",
+			"file": "src/assets/styles/components/pages.styl",
 			"settings":
 			{
-				"buffer_size": 1423,
+				"buffer_size": 1075,
 				"line_ending": "Unix"
 			}
 		},
@@ -588,18 +589,111 @@
 			"file": "src/app/components/app.component.ts",
 			"settings":
 			{
-				"buffer_size": 1050,
+				"buffer_size": 1303,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "/*     \n(c) 2016 Alex Klein, Florian Reifschneider, Patrick Helmig\ncreated for InsurHack 2016 by @ph (team InsuReco)\n*/\n\n/**\n * Interface for `Create Account`  responses\n */\nexport interface ICreateAccountResponse {\n    \n    /**\n     * The unqiue account identifier\n     * @type {string}\n     */\n    accountNumber: string;\n\n    /**\n     * The primary language the account holder\n     * @type {string}\n     */\n    primaryLanguage: string;\n\n    /**\n     * The title of the account holder\n     * @type {string}\n     */\n    title: string;\n\n    /**\n     * The first name of the account holder\n     * @type {string}\n     */\n    firstName: string;\n\n    /**\n     * The last name of the account holder\n     * @type {string}\n     */\n    lastName: string;\n\n    /**\n     * The street address of the account holder\n     * @type {string}\n     */\n    street: string;\n\n    /**\n     * The ZIP Code of residence of the account holder\n     * @type {string}\n     */\n    zip: string;\n\n    /**\n     * The City of the account holder\n     * @type {string}\n     */\n    city: string;\n\n}\n",
-			"file": "src/app/models/create-account.model.ts",
-			"file_size": 1070,
-			"file_write_time": 131240289759458209,
+			"file": "src/app/app.module.ts",
 			"settings":
 			{
-				"buffer_size": 1061,
+				"buffer_size": 3622,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/components/complete-checkout-page/complete-checkout-page.component.ts",
+			"settings":
+			{
+				"buffer_size": 1422,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/components/additional-info-page/additional-info-page.component.html",
+			"settings":
+			{
+				"buffer_size": 2328,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/components/individualize-coverage-bottom-sheet/individualize-coverage-bottom-sheet.component.html",
+			"settings":
+			{
+				"buffer_size": 427,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/components/individualize-coverage-bottom-sheet/individualize-coverage-bottom-sheet.component.ts",
+			"settings":
+			{
+				"buffer_size": 461,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/components/individualize-coverage-page/individualize-coverage-page.component.ts",
+			"settings":
+			{
+				"buffer_size": 6516,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/services/local-storage-service.ts",
+			"settings":
+			{
+				"buffer_size": 721,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/models/policy.model.ts",
+			"settings":
+			{
+				"buffer_size": 784,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/components/individualize-coverage-page/individualize-coverage-page.component.html",
+			"settings":
+			{
+				"buffer_size": 1071,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/components/policy-card/policy-card.component.html",
+			"settings":
+			{
+				"buffer_size": 505,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/components/policy-card/policy-card.component.styl",
+			"settings":
+			{
+				"buffer_size": 658,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/components/policy-card/policy-card.component.ts",
+			"settings":
+			{
+				"buffer_size": 1069,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/services/payloads/rating-legal-protection.ts",
+			"settings":
+			{
+				"buffer_size": 1206,
 				"line_ending": "Unix"
 			}
 		}
@@ -657,21 +751,41 @@
 		"/home/alex/public/insurhack/InsurHack/src",
 		"/home/alex/public/insurhack/InsurHack/src/app",
 		"/home/alex/public/insurhack/InsurHack/src/app/components",
+		"/home/alex/public/insurhack/InsurHack/src/app/components/additional-info-page",
+		"/home/alex/public/insurhack/InsurHack/src/app/components/complete-checkout-page",
+		"/home/alex/public/insurhack/InsurHack/src/app/components/finalize-contract-page",
+		"/home/alex/public/insurhack/InsurHack/src/app/components/header-bar",
+		"/home/alex/public/insurhack/InsurHack/src/app/components/individualize-coverage-bottom-sheet",
+		"/home/alex/public/insurhack/InsurHack/src/app/components/individualize-coverage-page",
+		"/home/alex/public/insurhack/InsurHack/src/app/components/instasure-page",
+		"/home/alex/public/insurhack/InsurHack/src/app/components/personal-details-page",
+		"/home/alex/public/insurhack/InsurHack/src/app/components/policy-card",
 		"/home/alex/public/insurhack/InsurHack/src/app/models",
 		"/home/alex/public/insurhack/InsurHack/src/app/services",
 		"/home/alex/public/insurhack/InsurHack/src/app/services/payloads",
 		"/home/alex/public/insurhack/InsurHack/src/app/swagger",
-		"/home/alex/public/insurhack/InsurHack/src/app/swagger/api"
+		"/home/alex/public/insurhack/InsurHack/src/app/swagger/api",
+		"/home/alex/public/insurhack/InsurHack/src/assets",
+		"/home/alex/public/insurhack/InsurHack/src/assets/styles",
+		"/home/alex/public/insurhack/InsurHack/src/assets/styles/components"
 	],
 	"file_history":
 	[
-		"/home/alex/public/insurhack/InsurHack/src/app/models/quote-order.model.t",
-		"/home/alex/public/insurhack/InsurHack/src/app/models/quote-offer.model.ts",
-		"/home/alex/public/insurhack/InsurHack/src/app/app.component.css",
+		"/home/alex/public/insurhack/InsurHack/src/app/components/individualize-coverage-page/individualize-coverage-page.component.ts",
+		"/home/alex/public/insurhack/InsurHack/src/app/services/payloads/policy-period-legal-protection.ts",
 		"/home/alex/public/insurhack/InsurHack/src/app/components/app.component.ts",
+		"/home/alex/public/insurhack/InsurHack/src/app/services/payloads/rating-legal-protection.ts",
+		"/home/alex/public/insurhack/InsurHack/src/app/services/account-service.ts",
+		"/home/alex/public/insurhack/InsurHack/src/app/swagger/api/PolicyApi.ts",
+		"/home/alex/public/insurhack/InsurHack/src/app/swagger/api/AccountApi.ts",
+		"/home/alex/public/insurhack/InsurHack/src/app/models/bind-order.model.ts",
+		"/home/alex/public/insurhack/InsurHack/src/app/models/quote-offer.model.ts",
+		"/home/alex/public/insurhack/InsurHack/src/app/models/quote-order.model.ts",
+		"/home/alex/public/insurhack/InsurHack/src/app/models/create-account.model.ts",
+		"/home/alex/public/insurhack/InsurHack/src/app/models/quote-order.model.t",
+		"/home/alex/public/insurhack/InsurHack/src/app/app.component.css",
 		"/home/alex/public/insurhack/InsurHack/src/app/app.module.ts",
 		"/home/alex/public/insurhack/InsurHack/src/app/models/create-policy-period-set.model.ts",
-		"/home/alex/public/insurhack/InsurHack/src/app/models/create-account.model.ts",
 		"/home/alex/public/insurhack/InsurHack/src/app/services/payloads/policy-period-liabillity.ts",
 		"/home/alex/public/insurhack/InsurHack/src/app/services/payloads/create-account.ts",
 		"/home/alex/public/insurhack/InsurHack/src/app/components/app.module.ts",
@@ -679,7 +793,6 @@
 		"/home/alex/public/insurhack/InsurHack/src/app/index.ts",
 		"/home/alex/public/insurhack/InsurHack/src/app/models/get-rating-response.model.ts",
 		"/home/alex/public/insurhack/InsurHack/src/app/services/index.ts",
-		"/home/alex/public/insurhack/InsurHack/src/app/services/account-service.ts",
 		"/home/alex/public/insurhack/InsurHack/src/app/services/payloads/rating-liability.ts",
 		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/services/classify-service.ts",
 		"/home/alex/public/insurhack/InsurHack/src/app/models/rating.ts",
@@ -690,9 +803,7 @@
 		"/home/alex/public/insurhack/InsurHack/src/app/swagger/configuration.ts",
 		"/home/alex/public/insurhack/InsurHack/index.ts",
 		"/home/alex/public/insurhack/InsurHack/src/app/swagger/index.ts",
-		"/home/alex/public/insurhack/InsurHack/src/app/swagger/api/AccountApi.ts",
 		"/home/alex/public/insurhack/InsurHack/src/app/swagger/api/ActionApi.ts",
-		"/home/alex/public/insurhack/InsurHack/src/app/swagger/api/PolicyApi.ts",
 		"/home/alex/public/insurhack/InsurHack/src/app/swagger/api/ProducerApi.ts",
 		"/home/alex/public/insurhack/InsurHack/src/api/PolicyApi.ts",
 		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/regulation-create/regulation-create.html",
@@ -787,12 +898,7 @@
 		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/classify/classify.ts",
 		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/processes/processes.ts",
 		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/models/document.ts",
-		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/models/keyword.ts",
-		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/app/app.ts",
-		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/components/institution/institution.ts",
-		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/models/process.ts",
-		"/home/alex/public/rocketloop/bancalis/classify-web/src/index.html",
-		"/home/alex/public/rocketloop/bancalis/classify-web/gulpfile.js"
+		"/home/alex/public/rocketloop/bancalis/classify-web/src/app/models/keyword.ts"
 	],
 	"find":
 	{
@@ -823,6 +929,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"workRS",
+			"selectedDeductible_RS",
+			"KEY_ACCOUNT_DATA",
+			"policies",
 			"Bind",
 			"QuoteO",
 			"quoteO",
@@ -946,11 +1056,7 @@
 			"\n",
 			",",
 			"\n",
-			",",
-			"\n",
-			",",
-			"\n",
-			"des"
+			","
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -979,24 +1085,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/app/swagger/api/PolicyApi.ts",
+					"file": "src/app/services/policy-service.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 24134,
+						"buffer_size": 10479,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								15699,
-								15699
+								4392,
+								4392
 							]
 						],
 						"settings":
@@ -1013,41 +1119,41 @@
 							"use_tab_stops": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 6434.0,
+						"translation.y": 1008.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "src/app/swagger/api/AccountApi.ts",
+					"file": "src/app/services/payloads/policy-period-liabillity.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12890,
+						"buffer_size": 1059,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2446,
-								2446
+								36,
+								36
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
-							"tab_size": 4,
+							"tab_size": 3,
 							"translate_tabs_to_spaces": true,
 							"use_tab_stops": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1104.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
@@ -1056,150 +1162,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1517,
+						"buffer_size": 1777,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1443,
-								1443
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"use_tab_stops": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 192.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/app/services/policy-service.ts",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6804,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3781,
-								3781
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"typescript_plugin_format_options":
-							{
-								"convertTabsToSpaces": true,
-								"indentSize": 4,
-								"tabSize": 4
-							},
-							"use_tab_stops": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1097.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/app/swagger/api/ProducerApi.ts",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 4839,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1077,
-								1077
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"typescript_plugin_format_options":
-							{
-								"convertTabsToSpaces": true,
-								"indentSize": 4,
-								"tabSize": 4
-							},
-							"use_tab_stops": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "src/app/models/bind-order.model.ts",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1421,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								144,
-								144
-							]
-						],
-						"settings":
-						{
-							"auto_name": "bind-order.model.ts",
-							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
-							"use_tab_stops": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "src/app/models/quote-offer.model.ts",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1423,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								149,
-								149
+								669,
+								669
 							]
 						],
 						"settings":
@@ -1216,87 +1187,27 @@
 							"use_tab_stops": false
 						},
 						"translation.x": -0.0,
-						"translation.y": 0.0,
+						"translation.y": 342.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "src/app/models/quote-order.model.ts",
+					"buffer": 3,
+					"file": "src/app/components/additional-info-page/additional-info-page.component.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1423,
+						"buffer_size": 4339,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1423,
-								1423
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"use_tab_stops": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "src/app/components/app.component.ts",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1050,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								716,
-								716
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
-							"use_tab_stops": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 96.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "src/app/models/create-account.model.ts",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1061,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								3825,
+								3825
 							]
 						],
 						"settings":
@@ -1316,7 +1227,595 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/app/components/finalize-contract-page/finalize-contract-page.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2292,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1783,
+								1783
+							]
+						],
+						"settings":
+						{
+							"auto_name": "finalize-contract-page.component.ts",
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": true,
+								"indentSize": 2,
+								"tabSize": 2
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 902.0,
+						"translation.y": 171.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/app/components/finalize-contract-page/finalize-contract-page.component.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 114,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "finalize-contract-page.component.html",
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/app/components/finalize-contract-page/finalize-contract-page.component.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 115,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								33,
+								33
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/assets/styles/components/pages.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1075,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								386,
+								386
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 513.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/app/components/app.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1303,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								433,
+								433
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": true,
+								"indentSize": 4,
+								"tabSize": 4
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/app/app.module.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3622,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2568,
+								2568
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"use_tab_stops": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 228.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "src/app/components/complete-checkout-page/complete-checkout-page.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1422,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1414,
+								1414
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "src/app/components/additional-info-page/additional-info-page.component.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2328,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1966,
+								1966
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": true,
+								"indentSize": 4,
+								"tabSize": 4
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 57.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "src/app/components/individualize-coverage-bottom-sheet/individualize-coverage-bottom-sheet.component.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 427,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								330,
+								330
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": true,
+								"indentSize": 4,
+								"tabSize": 4
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "src/app/components/individualize-coverage-bottom-sheet/individualize-coverage-bottom-sheet.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 461,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								403,
+								403
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "src/app/components/individualize-coverage-page/individualize-coverage-page.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6516,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5535,
+								5535
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"use_tab_stops": false
+						},
+						"translation.x": 21.0,
+						"translation.y": 2147.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "src/app/services/local-storage-service.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 721,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								181,
+								181
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": true,
+								"indentSize": 4,
+								"tabSize": 4
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "src/app/models/policy.model.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 784,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								575,
+								575
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 114.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "src/app/components/individualize-coverage-page/individualize-coverage-page.component.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1071,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								937,
+								937
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": true,
+								"indentSize": 4,
+								"tabSize": 4
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "src/app/components/policy-card/policy-card.component.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 505,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								394,
+								394
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": true,
+								"indentSize": 4,
+								"tabSize": 4
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "src/app/components/policy-card/policy-card.component.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 658,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								297,
+								297
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": true,
+								"indentSize": 4,
+								"tabSize": 4
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "src/app/components/policy-card/policy-card.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1069,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								590,
+								590
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"use_tab_stops": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 171.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "src/app/services/payloads/rating-legal-protection.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1206,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								688,
+								688
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true,
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 82.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
 					"type": "text"
 				}
 			]
@@ -1324,7 +1823,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 24.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -1377,7 +1876,7 @@
 	"project": "insurHack.sublime-project",
 	"replace":
 	{
-		"height": 44.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1423,7 +1922,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 498.0,
+	"side_bar_width": 358.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

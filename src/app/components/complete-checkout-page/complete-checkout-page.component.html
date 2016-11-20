@@ -1,2 +1,44 @@
-<h1 class="page__header">Payment Information</h1>
+<h1 class="page__header">Complete Checkout</h1>
 
+<form class="complete-checkout-page__form form" #f="ngForm" (ngSubmit)="onSubmit()">
+    
+    <div class="complete-checkout-page__review-box">
+        <div class="complete-checkout-page__review-premium-label">
+            Monthly Premium
+        </div>
+        <div class="complete-checkout-page__review-premium">
+            {{premium | currency:'EUR':true:'.2-2'}}
+        </div>
+        <h2 class="complete-checkout-page__review-summary-header">Summary of Coverage</h2>
+        <ol class="complete-checkout-page__review-summary-policies">
+            <li *ngFor="let policy of policies" class="complete-checkout-page__review-summary-policy">
+                {{policy.name}}
+            </li>
+        </ol>
+    </div>
+
+    <h2 class="form__section-header">Payment Details</h2>
+
+    <div class="form__row">
+        <md-input class="form__field" placeholder="First name" [(ngModel)]="paymentData.firstName" name="firstName" required></md-input>
+    </div>
+
+    <div class="form__row">
+        <md-input class="form__field" placeholder="Last name" [(ngModel)]="paymentData.lastName" name="lastName" required></md-input>
+    </div>
+
+    <div class="form__row">
+        <md-input class="form__field" placeholder="IBAN" [(ngModel)]="paymentData.IBAN" name="iban" required></md-input>
+    </div>
+
+    <div class="form__row">
+        <md-input class="form__field" placeholder="BIC" [(ngModel)]="paymentData.BIC" name="bic" required></md-input>
+    </div>
+
+    <md-checkbox #terms>I accept the Terms and Conditions and agree to the terms of the insurance contract that can be found <a href="#">here</a></md-checkbox>
+
+    <button md-fab type="submit" [disabled]="!f.valid || !terms.checked" >
+        <md-icon class="md-24">checkmark</md-icon>
+    </button>
+
+</form>

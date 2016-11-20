@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PolicyService } from '../../services';
+import { IPolicy } from '../../models/policy.model';
 import { Router } from '@angular/router';
 import { LocalStorageService, KEY_ACCOUNT_DATA, KEY_POLICY_DATA, KEY_ESTIMATION, KEY_ADDITIONAL_DATA } from '../../services/local-storage-service';
 
@@ -29,10 +30,14 @@ export class AdditionalInfoPageComponent implements OnInit {
 
     insuranceCosts: Array<number> = [];
 
+    policies: Array<IPolicy>;
+
     constructor(private localStorageService: LocalStorageService, private router: Router, private policyService: PolicyService) { }
 
     ngOnInit() {
         let storedEstimation = this.localStorageService.read(KEY_ESTIMATION);
+        this.policies = <Array<IPolicy>> this.localStorageService.read(KEY_POLICY_DATA);
+
         this.insuranceCosts.push(storedEstimation["estimation"]);
     }
 
@@ -105,8 +110,9 @@ export class AdditionalInfoPageComponent implements OnInit {
 
     getEstimatedPremium() {
         let costs = 0;
-        for(let price of this.insuranceCosts) {
-            costs += price;
+        for(let i in this.insuranceCosts) {
+            if (this.policies[i].selected)
+                costs += this.insuranceCosts[i];
         }
         return costs;
     }
@@ -125,6 +131,7 @@ export class AdditionalInfoPageComponent implements OnInit {
             selectedWork_RS: this.workRS
         };
         this.localStorageService.write(KEY_ADDITIONAL_DATA, additionalData);
+        this.localStorageService.write(KEY_ESTIMATION, {"estimation": this.getEstimatedPremium()});
         this.router.navigate(['/complete-checkout']);
     }
 

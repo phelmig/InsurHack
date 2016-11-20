@@ -1,46 +1,38 @@
 import { Component, OnInit } from '@angular/core';
-import { LocalStorageService, KEY_ACCOUNT_DATA, KEY_POLICY_DATA, KEY_ESTIMATION, KEY_ADDITIONAL_DATA } from '../../services/local-storage-service';
-import { PolicyService, AccountService } from '../../services';
+import { IPaymentData } from '../../models/payment-data.model';
+import { IPolicy } from '../../models/policy.model';
+import { IAccount } from '../../models/account.model';
 import { Router } from '@angular/router';
+import { LocalStorageService, KEY_ACCOUNT_DATA, KEY_POLICY_DATA, KEY_ESTIMATION, KEY_ADDITIONAL_DATA } from '../../services/local-storage-service';
 
 @Component({
   selector: 'app-complete-checkout-page',
   templateUrl: './complete-checkout-page.component.html',
+  styleUrls: ['./complete-checkout-page.component.styl']
+
 })
 export class CompleteCheckoutPageComponent implements OnInit {
 
-  constructor(private localStorageService: LocalStorageService, private router: Router, private policyService: PolicyService, private accountService: AccountService) { }
+  paymentData: IPaymentData = {};
+  premium: number;
+  policies: Array<IPolicy>;
+  account: IAccount;
+
+  constructor(private localStorageService: LocalStorageService, private router: Router) { }
 
   ngOnInit() {
-      let additionalData = this.localStorageService.read(KEY_ADDITIONAL_DATA);
-      console.log(additionalData);
-      let publicID;
-      let accountNumber
-      this.accountService.createAccount("Alex", "Klein").then(acc => {
-          accountNumber = acc.accountNumber;
-          return this.policyService.createLiabillityPolicyPeriodSet(accountNumber, "tc_silver");
-      }).then(set => {
-          publicID = set.publicID;
-          return this.policyService.sendQuoteOffer(publicID);
-      }).then(() => {
-          return this.policyService.sendQuoteOffer(publicID);
-      }).then(() => {
-          return this.policyService.sendBindOrder(publicID);
-      }).then(() => {
-          return this.policyService.createLegalProtectionPolicyPeriodSet(accountNumber, "500", "true");
-      }).then(set => {
-          publicID = set.publicID;
-          return this.policyService.sendQuoteOffer(publicID);
-      }).then(() => {
-          return this.policyService.sendQuoteOffer(publicID);
-      }).then(() => {
-          return this.policyService.sendBindOrder(publicID);
-      }).then(() => {
-          console.log("Great Success");
-      }).catch(err => {
-          console.log(err);
-      });
+      let storedEstimation = this.localStorageService.read(KEY_ESTIMATION);
+      let storedPolicies = <Array<IPolicy>> this.localStorageService.read(KEY_POLICY_DATA);
+      this.policies = storedPolicies.filter(policy => policy.selected);
+      this.premium = storedEstimation['estimation'];
+      this.account = this.localStorageService.read(KEY_ACCOUNT_DATA);
 
+      this.paymentData.firstName = this.account.firstName;
+      this.paymentData.lastName = this.account.lastName;
+  }
+
+  onSubmit() {
+      this.router.navigate(['/finalize-contract']);
   }
 
 }

@@ -1,4 +1,4 @@
-export const policyPeriodLiabillity = {
+export const policyLiabillityPayload = {
    "EffectiveDatedFields":    {
       "RateType_ZDE": "tc_normal",
       "TermType_ZDE": "tc_two_years"

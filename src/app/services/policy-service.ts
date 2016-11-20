@@ -7,7 +7,7 @@ import { PolicyApi } from '../swagger/api/PolicyApi'
 import { Injectable } from '@angular/core';
 import { ratingLiabilityPayload } from './payloads/rating-liability';
 import { ratingLegalProtectionPayload } from './payloads/rating-legal-protection';
-import { policyPeriodLiabillity } from './payloads/policy-period-liabillity';
+import { policyLiabillityPayload } from './payloads/policy-period-liabillity';
 import { policyLegalProtectionPayload } from './payloads/policy-period-legal-protection';
 import { IGetRatingResponse } from '../models/get-rating-response.model';
 import { ICreatePolicyPeriodSetResponse} from '../models/create-policy-period-set.model';
@@ -88,7 +88,7 @@ export class PolicyService {
      * @return {Promise<ICreatePolicyPeriodSetResponse>}                 The polic period set
      */
     createLiabillityPolicyPeriodSet(accountNumber: string, coverageConcept: string): Promise<ICreatePolicyPeriodSetResponse> {
-        var parameter = policyLegalProtectionPayload;
+        var parameter = policyLiabillityPayload;
         parameter["Policy"]["Account"]["AccountNumber"] = accountNumber;
         parameter["HALine"]["CoverageParts_ZDE"][0]["CoverageConcept"] = coverageConcept;
         return this.policyApi

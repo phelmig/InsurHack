@@ -24,7 +24,7 @@
     	<span>Deductible {{deductible[selectedDeductible_HA]}}</span>
     </div>
 	<div class="form__row">
-        <md-slider name="slide-sb-ha" min=0 max=4 tick-interval="1" [(ngModel)]="selectedDeductible_HA" style="width:100%;"></md-slider>
+        <md-slider name="slide-sb-ha" min=0 max=2 tick-interval="1" [(ngModel)]="selectedDeductible_HA" style="width:100%;"></md-slider>
     </div>    
     
     <h2 class="form__section-header">Legal Protection</h2>
@@ -42,8 +42,13 @@
     	<span>Deductible {{deductible[selectedDeductible_RS]}}</span>
     </div>
 	<div class="form__row">
-        <md-slider name="slide-sb-rs" min=0 max=4 tick-interval="1" [(ngModel)]="selectedDeductible_RS" style="width:100%;"></md-slider>
-    </div>    
+        <md-slider name="slide-sb-rs" min=0 max=2 tick-interval="1" [(ngModel)]="selectedDeductible_RS" style="width:100%;"></md-slider>
+    </div>
+    <h3>Work</h3>
+    <div class="form__row">
+        <div class="flex1">Work</div>
+        <md-slide-toggle name="checkmark-ab-rs" [(ngModel)]="workRS"></md-slide-toggle>
+    </div>  
     
     <button md-fab type="submit" [disabled]="!f.valid" >
         <md-icon class="md-24">keyboard_arrow_right</md-icon>

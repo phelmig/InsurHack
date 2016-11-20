@@ -3,22 +3,28 @@ import { LocalStorageService, KEY_ACCOUNT_DATA, KEY_POLICY_DATA, KEY_ESTIMATION,
 import { PolicyService, AccountService } from '../../services';
 import { Router } from '@angular/router';
 
-@Component({
-  selector: 'app-complete-checkout-page',
-  templateUrl: './complete-checkout-page.component.html',
-})
-export class CompleteCheckoutPageComponent implements OnInit {
 
-  constructor(private localStorageService: LocalStorageService, private router: Router, private policyService: PolicyService, private accountService: AccountService) { }
+@Component({
+  selector: 'app-finalize-contract-page',
+  templateUrl: './finalize-contract-page.component.html',
+  styleUrls: ['./finalize-contract-page.component.styl']
+})
+export class FinalizeContractPageComponent implements OnInit {
+
+  isFinalizing: boolean = true;
+
+  constructor(private localStorageService: LocalStorageService, private router: Router, private policyService: PolicyService, private accountService: AccountService) { };
 
   ngOnInit() {
       let additionalData = this.localStorageService.read(KEY_ADDITIONAL_DATA);
-      console.log(additionalData);
+      let accountData = this.localStorageService.read(KEY_ACCOUNT_DATA);
       let publicID;
       let accountNumber
-      this.accountService.createAccount("Alex", "Klein").then(acc => {
+      console.log(accountData);
+      console.log(additionalData);
+      this.accountService.createAccount(accountData["firstName"],accountData["lastName"]).then(acc => {
           accountNumber = acc.accountNumber;
-          return this.policyService.createLiabillityPolicyPeriodSet(accountNumber, "tc_silver");
+          return this.policyService.createLiabillityPolicyPeriodSet(accountNumber, additionalData["selectedCoverageType_HA"]);
       }).then(set => {
           publicID = set.publicID;
           return this.policyService.sendQuoteOffer(publicID);
@@ -27,7 +33,7 @@ export class CompleteCheckoutPageComponent implements OnInit {
       }).then(() => {
           return this.policyService.sendBindOrder(publicID);
       }).then(() => {
-          return this.policyService.createLegalProtectionPolicyPeriodSet(accountNumber, "500", "true");
+          return this.policyService.createLegalProtectionPolicyPeriodSet(accountNumber, additionalData["selectedDeductible_RS"], String(additionalData["selectedWork_RS"]));
       }).then(set => {
           publicID = set.publicID;
           return this.policyService.sendQuoteOffer(publicID);
@@ -37,10 +43,11 @@ export class CompleteCheckoutPageComponent implements OnInit {
           return this.policyService.sendBindOrder(publicID);
       }).then(() => {
           console.log("Great Success");
+          this.isFinalizing = false;
+          this.router.navigate(['/kelly-monster']);
       }).catch(err => {
           console.log(err);
       });
-
   }
 
 }

@@ -22,6 +22,7 @@ import { KellyMonsterPageComponent } from './components/kelly-monster-page/kelly
 import { KellyPageComponent } from './components/kelly-page/kelly-page.component';
 import { KellyMonsterSharePageComponent } from './components/kelly-monster-share-page/kelly-monster-share-page.component';
 import { InstasurePageComponent } from './components/instasure-page/instasure-page.component';
+import { FinalizeContractPageComponent } from './components/finalize-contract-page/finalize-contract-page.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/start', pathMatch: 'full' },
@@ -32,7 +33,8 @@ const appRoutes: Routes = [
   { path: 'personal-details', component: PersonalDetailsPageComponent },
   { path: 'individualize-coverage', component: IndividualizeCoveragePageComponent },
   { path: 'additional-info', component: AdditionalInfoPageComponent },
-  { path: 'complete-checkout', component: CompleteCheckoutPageComponent }
+  { path: 'complete-checkout', component: CompleteCheckoutPageComponent },
+  { path: 'finalize-contract', component: FinalizeContractPageComponent }
 ];
 
 @NgModule({
@@ -50,6 +52,7 @@ const appRoutes: Routes = [
     KellyPageComponent,
     KellyMonsterSharePageComponent,
     InstasurePageComponent,
+    FinalizeContractPageComponent,
   ],
   imports: [
     BrowserModule,

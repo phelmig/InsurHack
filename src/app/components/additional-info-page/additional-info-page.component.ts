@@ -8,8 +8,8 @@ import { LocalStorageService, KEY_ACCOUNT_DATA, KEY_POLICY_DATA, KEY_ESTIMATION,
   templateUrl: './additional-info-page.component.html',
 })
 export class AdditionalInfoPageComponent implements OnInit {
-	deductible: string[] = ['0€', '150€', '250€', '500€', '1000€'];
-	deductibleCodes: string[] = ['0', '150', '250', '500', '1000'];
+	deductible: string[] = ['150€', '250€', '500€'];
+	deductibleCodes: string[] = ['150', '250', '500'];
 
     coverageType: string[] = ['Bronze', 'Silver', 'Gold'];
     coverageTypeCodes: string[] = ['tc_bronze', 'tc_silver', 'tc_gold'];
@@ -22,6 +22,8 @@ export class AdditionalInfoPageComponent implements OnInit {
     _selectedCoverageType_RS: number = 1;
 
     _familyStatus: string;
+
+    _workRS: boolean = false;
 
     isEstimating = false;
 
@@ -54,6 +56,10 @@ export class AdditionalInfoPageComponent implements OnInit {
         return this._familyStatus;
     }
 
+    get workRS(): boolean {
+        return this._workRS;
+    }
+
     set selectedDeductible_HA(value: number) {
         this._selectedDeductible_HA = value;
         this.recalculate();
@@ -79,17 +85,20 @@ export class AdditionalInfoPageComponent implements OnInit {
         this.recalculate();
     }
 
+    set workRS(value: boolean) {
+        this._workRS = value;
+        this.recalculate();
+    }
+
     recalculate() {
         this.insuranceCosts = [];
         this.isEstimating = true;
-        this.policyService.getLegalProtectionRating(this.deductibleCodes[this._selectedDeductible_RS], "false").then((rating) => {
+        console.log("workRS", String(this.workRS));
+        this.policyService.getLegalProtectionRating(this.deductibleCodes[this._selectedDeductible_RS], String(this.workRS)).then((rating) => {
             this.insuranceCosts.push(rating.grossPrice);
             return this.policyService.getLiabilityRating(this.coverageTypeCodes[this._selectedCoverageType_HA]);
         }).then((rating) => {
             this.insuranceCosts.push(rating.grossPrice);
-            this.insuranceCosts.push(100);
-            this.insuranceCosts.push(100);
-            this.insuranceCosts.push(100);
             this.isEstimating = false;
         })
     }
@@ -109,10 +118,11 @@ export class AdditionalInfoPageComponent implements OnInit {
     onSubmit() {
         let additionalData = {
             familyStatus: this.familyStatus,
-            selectedDeductible_HA: this.selectedDeductible_HA,
-            selectedDeductible_RS: this.selectedDeductible_RS,
-            selectedCoverageType_HA: this.selectedCoverageType_HA,
-            selectedCoverageType_RS: this.selectedCoverageType_RS
+            selectedDeductible_HA: this.deductibleCodes[this.selectedDeductible_HA],
+            selectedDeductible_RS: this.deductibleCodes[this.selectedDeductible_RS],
+            selectedCoverageType_HA: this.coverageTypeCodes[this.selectedCoverageType_HA],
+            selectedCoverageType_RS: this.coverageTypeCodes[this.selectedCoverageType_RS],
+            selectedWork_RS: this.workRS
         };
         this.localStorageService.write(KEY_ADDITIONAL_DATA, additionalData);
         this.router.navigate(['/complete-checkout']);

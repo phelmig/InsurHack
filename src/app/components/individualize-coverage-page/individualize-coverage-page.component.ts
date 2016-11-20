@@ -81,7 +81,7 @@ export class IndividualizeCoveragePageComponent implements OnInit {
     reloadRates() {
         this.insuranceCosts = [];
         this.isEstimating = true;
-        this.policyService.getLegalProtectionRating("500", "true").then((rating) => {
+        this.policyService.getLegalProtectionRating("500", "false").then((rating) => {
             this.insuranceCosts.push(rating.grossPrice);
             return this.policyService.getLiabilityRating("tc_silver");
         }).then((rating) => {

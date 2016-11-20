@@ -105,11 +105,11 @@ export class AdditionalInfoPageComponent implements OnInit {
         }).then((rating) => {
             this.insuranceCosts.push(rating.grossPrice);
             //Occupational Incapacity
-            this.insuranceCosts.push(100);
+            this.insuranceCosts.push(230);
             //Accident
-            this.insuranceCosts.push(100);
+            this.insuranceCosts.push(80);
             //Household
-            this.insuranceCosts.push(100);
+            this.insuranceCosts.push(37);
             this.isEstimating = false;
         })
     }

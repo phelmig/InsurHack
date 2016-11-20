@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, trigger, state, style, transition, animate } from '@angular/core';
 import { PolicyService } from '../../services';
 import { IPolicy } from '../../models/policy.model';
 import { Router } from '@angular/router';
@@ -7,6 +7,22 @@ import { LocalStorageService, KEY_ACCOUNT_DATA, KEY_POLICY_DATA, KEY_ESTIMATION,
 @Component({
   selector: 'app-additional-info-page',
   templateUrl: './additional-info-page.component.html',
+  host: {
+        '[@routeAnimation]': 'true'
+    },
+    animations: [
+        trigger('routeAnimation', [
+            state('in', style({ transform: 'translateX(0)' })),
+            transition('void => *', [
+                style({ transform: 'translateX(100%)' }),
+                animate('100ms ease-in-out')
+            ]),
+            transition('* => void', [
+                style({ transform: 'translateX(-100%)' }),
+                animate('100ms ease-in-out')
+            ])
+        ])
+    ]
 })
 export class AdditionalInfoPageComponent implements OnInit {
 	deductible: string[] = ['150€', '250€', '500€'];

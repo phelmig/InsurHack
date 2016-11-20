@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, trigger, state, style, transition, animate } from '@angular/core';
 import { IPaymentData } from '../../models/payment-data.model';
 import { IPolicy } from '../../models/policy.model';
 import { IAccount } from '../../models/account.model';
@@ -8,8 +8,23 @@ import { LocalStorageService, KEY_ACCOUNT_DATA, KEY_POLICY_DATA, KEY_ESTIMATION,
 @Component({
   selector: 'app-complete-checkout-page',
   templateUrl: './complete-checkout-page.component.html',
-  styleUrls: ['./complete-checkout-page.component.styl']
-
+  styleUrls: ['./complete-checkout-page.component.styl'],
+    host: {
+        '[@routeAnimation]': 'true'
+    },
+    animations: [
+        trigger('routeAnimation', [
+            state('in', style({ transform: 'translateX(0)' })),
+            transition('void => *', [
+                style({ transform: 'translateX(100%)' }),
+                animate('100ms ease-in-out')
+            ]),
+            transition('* => void', [
+                style({ transform: 'translateX(-100%)' }),
+                animate('100ms ease-in-out')
+            ])
+        ])
+    ]
 })
 export class CompleteCheckoutPageComponent implements OnInit {
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, trigger, state, style, transition, animate } from '@angular/core';
 import { Router } from '@angular/router';
 import { LocalStorageService, KEY_ACCOUNT_DATA, KEY_POLICY_DATA, KEY_ESTIMATION } from '../../services/local-storage-service';
 import { IAccount } from '../../models/account.model';
@@ -6,9 +6,25 @@ import { IPolicy, PolicyType } from '../../models/policy.model';
 import { PolicyService, AccountService } from '../../services';
 
 @Component({
-  selector: 'app-individualize-coverage-page',
-  templateUrl: './individualize-coverage-page.component.html',
-  styleUrls: ['./individualize-coverage-page.component.styl']
+    selector: 'app-individualize-coverage-page',
+    templateUrl: './individualize-coverage-page.component.html',
+    styleUrls: ['./individualize-coverage-page.component.styl'],
+    host: {
+        '[@routeAnimation]': 'true'
+    },
+    animations: [
+        trigger('routeAnimation', [
+            state('in', style({ transform: 'translateX(0)' })),
+            transition('void => *', [
+                style({ transform: 'translateX(100%)' }),
+                animate('100ms ease-in-out')
+            ]),
+            transition('* => void', [
+                style({ transform: 'translateX(-100%)' }),
+                animate('100ms ease-in-out')
+            ])
+        ])
+    ]
 })
 export class IndividualizeCoveragePageComponent implements OnInit {
 
@@ -31,7 +47,7 @@ export class IndividualizeCoveragePageComponent implements OnInit {
             ["Rent damage, eg to buildings rented by you, living quarters", "1 Mio EUR"],
             ["Internet risk for damages caused by you through the exchange, transmission and provision of electronic data", "3 Mio EUR"],
             ["Loss of claim for damages that have been given to you by a third party and which could not be realized with it", "5 Mio EUR"]
-            ],
+        ],
         selected: true,
         level: 1
     },
@@ -50,14 +66,14 @@ export class IndividualizeCoveragePageComponent implements OnInit {
         selected: false,
         insuranceCoverage: [],
         level: 1
-    },{
+    }, {
         name: "Accident",
         type: PolicyType.ACCIDENT,
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut ante eu ex aliquet maximus a vitae nisl. Curabitur ultricies imperdiet magna, ut dictum tellus posuere non. Sed sodales quam eu luctus sodales. Quisque varius est iaculis, consequat lacus quis, blandit arcu.",
         selected: false,
         insuranceCoverage: [],
         level: 1
-    },{
+    }, {
         name: "Household",
         type: PolicyType.HOUSEHOLD,
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut ante eu ex aliquet maximus a vitae nisl. Curabitur ultricies imperdiet magna, ut dictum tellus posuere non. Sed sodales quam eu luctus sodales. Quisque varius est iaculis, consequat lacus quis, blandit arcu.",
@@ -71,7 +87,7 @@ export class IndividualizeCoveragePageComponent implements OnInit {
     ngOnInit() {
         this.account = this.localStorageService.read(KEY_ACCOUNT_DATA);
         // if no account detail are found in local storage, redirect to first step
-        if(!this.account) {
+        if (!this.account) {
             this.router.navigate(['/personal-details']);
         }
 
@@ -107,7 +123,7 @@ export class IndividualizeCoveragePageComponent implements OnInit {
 
     getEstimatedPremium() {
         let costs = 0;
-        for(let i in this.insuranceCosts) {
+        for (let i in this.insuranceCosts) {
             if (this.policies[i].selected)
                 costs += this.insuranceCosts[i];
         }
@@ -130,7 +146,7 @@ export class IndividualizeCoveragePageComponent implements OnInit {
 
     onSubmit() {
         this.localStorageService.write(KEY_POLICY_DATA, this.policies);
-        this.localStorageService.write(KEY_ESTIMATION, {"estimation": this.getEstimatedPremium()});
+        this.localStorageService.write(KEY_ESTIMATION, { "estimation": this.getEstimatedPremium() });
         this.router.navigate(['/additional-info']);
     }
 

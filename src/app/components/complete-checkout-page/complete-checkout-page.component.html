@@ -35,7 +35,9 @@
         <md-input class="form__field" placeholder="BIC" [(ngModel)]="paymentData.BIC" name="bic" required></md-input>
     </div>
 
-    <button md-fab type="submit" [disabled]="!f.valid" >
+    <md-checkbox #terms>I accept the Terms and Conditions and agree to the terms of the insurance contract that can be found <a href="#">here</a></md-checkbox>
+
+    <button md-fab type="submit" [disabled]="!f.valid || !terms.checked" >
         <md-icon class="md-24">checkmark</md-icon>
     </button>
 

@@ -32,4 +32,8 @@ export class CompleteCheckoutPageComponent implements OnInit {
       this.paymentData.lastName = this.account.lastName;
   }
 
+  onSubmit() {
+      this.router.navigate(['/finalize-contract']);
+  }
+
 }
